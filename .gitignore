@@ -1,0 +1,39 @@
+# --- Backend (Python / FastAPI) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+*.db
+*.sqlite
+*.sqlite3
+artisan_brew.db
+backend/.env
+backend/.env.local
+
+# --- Frontend (Node / Vite / React) ---
+node_modules/
+dist/
+.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/.env
+frontend/.env.local
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- Build / temp ---
+.cache/
+tmp/
+*.bak

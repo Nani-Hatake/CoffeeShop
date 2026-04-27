@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#273103",
+                    "surface": "#fff8f4",
+                    "on-surface-variant": "#504442",
+                    "secondary": "#5e604d",
+                    "background": "#fff8f4",
+                    "on-secondary-container": "#636451",
+                    "surface-container": "#ffebd3",
+                    "on-tertiary-fixed-variant": "#404b1b",
+                    "surface-variant": "#feddb3",
+                    "on-tertiary-fixed": "#171e00",
+                    "on-surface": "#281801",
+                    "surface-bright": "#fff8f4",
+                    "tertiary-fixed": "#dbe9a9",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#141b00",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#8d9a61",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "surface-container-highest": "#feddb3",
+                    "primary-container": "#3e2723",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#ffeedb",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#bfcd8f",
+                    "outline-variant": "#d3c3c0",
+                    "primary-fixed-dim": "#e3beb8",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#e1e1c9",
+                    "primary": "#271310",
+                    "outline": "#827472",
+                    "surface-dim": "#f5d5ab",
+                    "surface-container-high": "#ffe4c2",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-secondary-fixed-variant": "#474836",
+                    "surface-container-low": "#fff1e4",
+                    "surface-tint": "#745853",
+                    "on-background": "#281801",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "inverse-surface": "#402d10",
+                    "on-primary-fixed": "#2b1613",
+                    "inverse-primary": "#e3beb8",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "lg": "24px",
+                    "unit": "4px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "16px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f4;
+            color: #281801;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-stone-50 dark:bg-stone-900 border-b border-stone-200 dark:border-stone-800 shadow-sm dark:shadow-none fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-amber-900/10">
+<img alt="Julian Thorne" class="w-full h-full object-cover" data-alt="Close-up portrait of a sophisticated man with a neat beard in a warm lit environment, professional photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxyvC3uJzTVa5FLvSrpOpkyCYbftL4NfLIaJIRGdRRZJG3s5ZvJ-8bM8GzxLGdtjx0abrk6SY-idPWlnEyx1hBfFk7OoUx2T-QB--hhbf6NFIr4ikXPF9_KLVDfsYDuOezeKPXQwS9tV8u_isNHkP1TDKhb0sqs9P8dJCJ7TQlYwmtBZjPQVjUEXzjrV5nvuvzbrHjPj0o-WoU5SbdHJecB6yH-c8vWSpe5tOTKBXX7bobXxhYm1XvLLZqjnaDtxWSMUsAVwBciuY"/>
+</div>
+<h1 class="font-serif text-xl font-bold text-amber-950 dark:text-amber-50">Artisan Brew</h1>
+</div>
+<button class="text-amber-950 dark:text-amber-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="mt-20 px-margin-mobile max-w-2xl mx-auto space-y-xl">
+<!-- Membership Card Section -->
+<section>
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-white p-lg shadow-xl aspect-[1.6/1]">
+<!-- Card Grain Texture Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/pinstriped-suit.png')]"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container/80">Julian Thorne</p>
+<h2 class="font-headline-md text-headline-md mt-unit text-on-primary">Artisan Tier</h2>
+</div>
+<span class="material-symbols-outlined text-3xl opacity-50" data-icon="verified">verified</span>
+</div>
+<div>
+<div class="flex justify-between items-end mb-sm">
+<span class="font-label-md text-label-md text-on-primary">85 / 100 points</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">15 to next brew</span>
+</div>
+<div class="w-full bg-on-primary-container/20 h-2 rounded-full overflow-hidden">
+<div class="bg-surface-variant h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Abstract Decorative Shapes -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-surface-variant/10 rounded-full blur-3xl"></div>
+<div class="absolute -top-10 -left-10 w-32 h-32 bg-amber-200/5 rounded-full blur-2xl"></div>
+</div>
+</section>
+<!-- Earned Rituals Section (Bento Inspired Grid) -->
+<section>
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-primary">Earned Rituals</h3>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">History</span>
+</div>
+<div class="grid grid-cols-4 gap-sm">
+<!-- Ritual Item 1 -->
+<div class="aspect-square bg-surface-container-low border border-outline-variant/30 rounded-lg flex flex-col items-center justify-center text-primary group hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-2xl" data-icon="coffee" data-weight="fill" style="font-variation-settings: 'FILL' 1;">coffee</span>
+<span class="font-label-sm text-[10px] mt-xs">Mon</span>
+</div>
+<!-- Ritual Item 2 -->
+<div class="aspect-square bg-surface-container-low border border-outline-variant/30 rounded-lg flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="restaurant" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-label-sm text-[10px] mt-xs">Tue</span>
+</div>
+<!-- Ritual Item 3 -->
+<div class="aspect-square bg-surface-container-low border border-outline-variant/30 rounded-lg flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="coffee_maker" data-weight="fill" style="font-variation-settings: 'FILL' 1;">coffee_maker</span>
+<span class="font-label-sm text-[10px] mt-xs">Wed</span>
+</div>
+<!-- Ritual Item 4 (Today/Empty) -->
+<div class="aspect-square border-2 border-dashed border-outline-variant rounded-lg flex flex-col items-center justify-center text-outline-variant">
+<span class="material-symbols-outlined text-2xl" data-icon="add">add</span>
+<span class="font-label-sm text-[10px] mt-xs">Today</span>
+</div>
+</div>
+</section>
+<!-- Redeemable Rewards Section -->
+<section class="pb-8">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-primary">Redeemable Rewards</h3>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Available</span>
+</div>
+<div class="space-y-md">
+<!-- Reward Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex group active:scale-[0.98] transition-transform">
+<div class="w-1/3 h-32 overflow-hidden">
+<img alt="Signature Latte" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Expertly poured latte art in a white ceramic cup on a dark wood table with warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD_7Af2J2mn-aKoYom49Cu5aIkFUfnI_IAdTtyXgvEYmOS9YGZsUGFAJBob7LXO9UxKlhPY_CRtxCjPgE-v065SwkERzXnrjY_FLRGdkC7-yqg4SrGBQ_uexqX9CrYTbSXoz8mLR6nmUTPF0F-CfrBK_th6V8C2p4DoT2irb0fLxqOpQUpBZGZ_Ujv9uc6EuaMcHP5ZoQIr4kjyeQM7Pz6OmnxvtotHxLKJZ4YN1OyGobv1Zstg1fbhCPhEAc57jZgrkRmiHAQx6E"/>
+</div>
+<div class="w-2/3 p-md flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Any Signature Latte</h4>
+<p class="font-body-md text-label-sm text-outline">Excludes seasonal limited drops</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary font-bold">50 pts</span>
+<button class="px-md py-1 bg-primary text-on-primary rounded-full font-label-sm hover:opacity-90 transition-opacity">Redeem</button>
+</div>
+</div>
+</div>
+<!-- Reward Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex group active:scale-[0.98] transition-transform">
+<div class="w-1/3 h-32 overflow-hidden">
+<img alt="Almond Croissant" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Golden flaky almond croissant on a marble plate with a dusting of powdered sugar and dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPDH_BIdnqHQtUB-48BujFMDZQ2DJZkpCFXkpYjstZVSL-s3PNusf6qfXzt8AzK-gif8Faqr3VWlIM3Wuv3-Ba9ywRoB3avQ35nwC5V7c83JB4Gr_pWuWxSok9LefY76XRkAC-Gw-9MJaeKS6DltKkiIbL8WEztPG4EYfdhbniRXw1gWSsfJDlma2sYemW3mveTYURwGw7FBf5IhMh0a1sJGoMhnB7P72yLmtG6iV19SIHVQcuPFte14IQH8Y5qGmnMm-4YUUeSFo"/>
+</div>
+<div class="w-2/3 p-md flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Artisan Pastry</h4>
+<p class="font-body-md text-label-sm text-outline">Fresh from the morning bake</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary font-bold">75 pts</span>
+<button class="px-md py-1 bg-primary text-on-primary rounded-full font-label-sm hover:opacity-90 transition-opacity">Redeem</button>
+</div>
+</div>
+</div>
+<!-- Reward Card 3 (Locked) -->
+<div class="bg-stone-100 opacity-60 rounded-xl overflow-hidden border border-outline-variant/20 flex grayscale">
+<div class="w-1/3 h-32 overflow-hidden bg-stone-300">
+<img alt="Bag of Beans" class="w-full h-full object-cover" data-alt="250g bag of single-origin coffee beans with a clean minimalist label on a concrete surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDek9KKjEIt9jwi0hzEgkkEKILk3mm8o9hY9_MUuUP7jBiD7bwpjnmGV2oO2Ts65MY4XDN3uvX-DU-HKPZIJx6ag3lm1ux_ZEBm7PQohrAgycB82ZMiGs0_NDQY78FE5XYgDGOnb9eDC2K73fX4sZ8FJMq2WR66g8t1zZA4k_ISr-APWqNUFvrl_H2EfKWANxQoSJHV5Fb_5cRFABTMPSV7k7UR-8vBcOt3B0i_YIu-Pfru6H4qnrTsUd6QyFX1YCN4bYPm0yWCqzY"/>
+</div>
+<div class="w-2/3 p-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1">
+<h4 class="font-headline-md text-[18px] text-stone-600">House Blend 250g</h4>
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+</div>
+<p class="font-body-md text-label-sm text-stone-500">Single origin Ethiopian beans</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-stone-600 font-bold">200 pts</span>
+<span class="font-label-sm text-stone-400">Locked</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-4 bg-stone-50/90 dark:bg-stone-900/90 backdrop-blur-md border-t border-stone-200 dark:border-stone-800 shadow-[0_-2px_10px_rgba(62,39,35,0.05)] z-50 rounded-t-lg">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-amber-800 dark:hover:text-amber-100 transition-colors">
+<span class="material-symbols-outlined" data-icon="coffee">coffee</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Brew</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-amber-800 dark:hover:text-amber-100 transition-colors">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Orders</span>
+</div>
+<!-- Active Tab: Loyalty -->
+<div class="flex flex-col items-center justify-center text-amber-900 dark:text-amber-200 scale-105 transition-transform font-semibold">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Loyalty</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-amber-800 dark:hover:text-amber-100 transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Settings</span>
+</div>
+</nav>
+</body></html>

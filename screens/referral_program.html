@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "tertiary-fixed-dim": "#bfcd8f",
+                  "surface-container": "#ffebd3",
+                  "on-secondary-fixed-variant": "#474836",
+                  "surface-container-lowest": "#ffffff",
+                  "inverse-on-surface": "#ffeedb",
+                  "surface-dim": "#f5d5ab",
+                  "inverse-surface": "#402d10",
+                  "on-tertiary-container": "#8d9a61",
+                  "tertiary-container": "#273103",
+                  "on-secondary": "#ffffff",
+                  "on-tertiary": "#ffffff",
+                  "tertiary-fixed": "#dbe9a9",
+                  "surface-container-high": "#ffe4c2",
+                  "error-container": "#ffdad6",
+                  "primary-fixed-dim": "#e3beb8",
+                  "inverse-primary": "#e3beb8",
+                  "surface-variant": "#feddb3",
+                  "secondary-fixed": "#e4e4cc",
+                  "outline-variant": "#d3c3c0",
+                  "primary-fixed": "#ffdad4",
+                  "primary-container": "#3e2723",
+                  "surface": "#fff8f4",
+                  "on-error-container": "#93000a",
+                  "on-background": "#281801",
+                  "surface-container-highest": "#feddb3",
+                  "surface-container-low": "#fff1e4",
+                  "on-tertiary-fixed-variant": "#404b1b",
+                  "on-error": "#ffffff",
+                  "on-primary-fixed": "#2b1613",
+                  "secondary-container": "#e1e1c9",
+                  "secondary": "#5e604d",
+                  "on-surface-variant": "#504442",
+                  "error": "#ba1a1a",
+                  "tertiary": "#141b00",
+                  "secondary-fixed-dim": "#c8c8b0",
+                  "on-tertiary-fixed": "#171e00",
+                  "primary": "#271310",
+                  "background": "#fff8f4",
+                  "on-primary-container": "#ae8d87",
+                  "on-secondary-fixed": "#1b1d0e",
+                  "on-primary": "#ffffff",
+                  "on-secondary-container": "#636451",
+                  "surface-tint": "#745853",
+                  "surface-bright": "#fff8f4",
+                  "on-surface": "#281801",
+                  "on-primary-fixed-variant": "#5b403c",
+                  "outline": "#827472"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "margin-mobile": "20px",
+                  "gutter": "16px",
+                  "lg": "24px",
+                  "xl": "32px",
+                  "sm": "8px",
+                  "md": "16px",
+                  "xs": "4px",
+                  "unit": "4px"
+          },
+          "fontFamily": {
+                  "display-lg": ["Noto Serif"],
+                  "headline-lg": ["Noto Serif"],
+                  "body-md": ["Be Vietnam Pro"],
+                  "label-sm": ["Be Vietnam Pro"],
+                  "label-md": ["Be Vietnam Pro"],
+                  "headline-md": ["Noto Serif"],
+                  "body-lg": ["Be Vietnam Pro"]
+          },
+          "fontSize": {
+                  "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                  "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                  "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                  "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                  "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                  "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                  "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(62, 39, 35, 0.08), 0 4px 12px -4px rgba(62, 39, 35, 0.04);
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="bg-stone-50 dark:bg-stone-950 flex justify-between items-center px-5 h-16 w-full docked full-width top-0 border-b border-stone-200 dark:border-stone-800 shadow-sm dark:shadow-none fixed z-50">
+<div class="flex items-center gap-4">
+<button class="text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-xl font-serif font-semibold text-stone-900 dark:text-stone-50 font-serif italic tracking-wide">Artisan Brew</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling person with warm lighting and a soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYUDALehkvrlyJYsg1v5Uy3W2pGhoZCTG2NoujxqS4mbyrW3rSje8mCBtdnfOlZ8hQtYF9Etw3rQTPPMLzhDNXFQFyJ_sKNi0RIW9zvJrYSnQcZ2LU9GINPlvPYbQJbHtE0PJSiM1X8HKej-CP1BUpkG9TzvY_lPoZNp9M260OlELsm5D-L7il1mLnNOKl_tYB6-9DrpaJ7AsKuhAplCXg5dYu9kEz8UZQEzyhl7HRkptB3-lWo_fohWo8GzjrUbjnJjkb14eC74w"/>
+</div>
+</header>
+<main class="pt-16 pb-24 px-margin-mobile max-w-md mx-auto">
+<!-- Hero Illustration Section -->
+<section class="mt-lg rounded-xl overflow-hidden relative aspect-[4/3] custom-shadow">
+<img alt="People sharing coffee" class="w-full h-full object-cover" data-alt="Two friends sitting at a wooden cafe table, laughing while sharing artisanal coffee in ceramic mugs, warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_YgO0RbILCu5tbvMPeUIVzwZ_a8xUL_ib-3mFljBpGXq1QgIRNHUOkAsqZsbmFZqP_o9zhzuzsLWb_-ioPbttpu4uVzXPqsTZdzAkkDij9SL4iL5ZdZaWsP6d93lwrYLwUZR5F6p3MGbK5Z5c4TdaNZv7Z5n9sdShx8QU66KP2o-5W96tr9VhE-p6S-g0L7Iq9CbO0KBdNsMvsFKVzpZrEa8jxTSZ3IA2OjPdees_giN07JuLzJy3B2SOSU44UtfU55NglwpOa0U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-white/80 font-label-sm uppercase tracking-widest mb-xs block">Community Ritual</span>
+<h2 class="text-white font-headline-lg text-headline-lg leading-tight italic">Share the Ritual</h2>
+</div>
+</section>
+<!-- Value Proposition -->
+<section class="mt-xl text-center">
+<p class="text-on-surface-variant font-body-lg text-body-lg mb-sm">Give a free brew, get a free brew</p>
+<p class="text-on-surface-variant/70 font-body-md text-body-md px-4">
+        When your friend makes their first order, you both receive a complimentary craft coffee voucher.
+      </p>
+</section>
+<!-- Referral Code Section -->
+<section class="mt-xl">
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-lg text-center custom-shadow">
+<span class="font-label-sm text-outline mb-md block">YOUR UNIQUE CODE</span>
+<div class="bg-surface-container-highest/50 border-2 border-dashed border-primary-container/20 rounded-lg py-md mb-md">
+<span class="font-display-lg text-display-lg tracking-[0.2em] text-primary select-all">ARTISAN75</span>
+</div>
+<button class="flex items-center justify-center gap-2 mx-auto text-primary font-label-md hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+<span>Tap to copy code</span>
+</button>
+</div>
+</section>
+<!-- Sharing Actions -->
+<section class="mt-xl space-y-md">
+<button class="w-full h-[56px] bg-primary-container text-surface-container-lowest rounded-full font-label-md flex items-center justify-center gap-3 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+        INVITE VIA MESSAGING
+      </button>
+<div class="grid grid-cols-3 gap-md">
+<button class="aspect-square bg-surface-container-high rounded-xl flex flex-col items-center justify-center gap-1 hover:bg-surface-variant transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">EMAIL</span>
+</button>
+<button class="aspect-square bg-surface-container-high rounded-xl flex flex-col items-center justify-center gap-1 hover:bg-surface-variant transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">SOCIAL</span>
+</button>
+<button class="aspect-square bg-surface-container-high rounded-xl flex flex-col items-center justify-center gap-1 hover:bg-surface-variant transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="more_horiz">more_horiz</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">OTHER</span>
+</button>
+</div>
+</section>
+<!-- Referral Stats / Progress -->
+<section class="mt-xl pt-lg border-t border-outline-variant/30">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-primary">Your Brew Credits</h3>
+<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm px-3 py-1 rounded-full">2 Pending</span>
+</div>
+<div class="flex items-center gap-4 bg-white/40 p-md rounded-xl border border-white/60">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="card_giftcard" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+</div>
+<div>
+<p class="font-label-md text-primary">3 Brews Earned</p>
+<p class="text-xs text-on-surface-variant/60 italic">Next credit in 1 referral</p>
+</div>
+<button class="ml-auto text-primary-container font-label-md underline underline-offset-4">Details</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md border-t border-stone-200 dark:border-stone-800 shadow-[0_-1px_3px_0_rgba(62,39,35,0.05)]">
+<!-- Explore -->
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="coffee">coffee</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Explore</span>
+</div>
+<!-- Subscriptions -->
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="auto_renew">autorenew</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Subscriptions</span>
+</div>
+<!-- Locator -->
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Locator</span>
+</div>
+<!-- Rewards (Active) -->
+<div class="flex flex-col items-center justify-center bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-stone-900 rounded-full px-4 py-1 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="card_giftcard" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Rewards</span>
+</div>
+</nav>
+</body></html>

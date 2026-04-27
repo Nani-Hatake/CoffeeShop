@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Artisan Brew &mdash; Design System & Screens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" />
+<style>
+  :root {
+    --surface: #fff8f4;
+    --surface-container: #ffebd3;
+    --surface-container-low: #fff1e4;
+    --surface-container-lowest: #ffffff;
+    --surface-container-high: #ffe4c2;
+    --surface-container-highest: #feddb3;
+    --on-surface: #281801;
+    --on-surface-variant: #504442;
+    --primary: #271310;
+    --primary-container: #3e2723;
+    --on-primary: #ffffff;
+    --secondary: #5e604d;
+    --tertiary-container: #273103;
+    --outline: #827472;
+    --outline-variant: #d3c3c0;
+  }
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--surface);
+    color: var(--on-surface);
+  }
+  h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .screen-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .screen-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -12px rgba(39,19,16,0.22);
+  }
+  .screen-card .thumb-wrap {
+    aspect-ratio: 9 / 19.5;
+    background: linear-gradient(135deg, #fff1e4 0%, #ffe4c2 100%);
+  }
+  .swatch { width: 56px; height: 56px; border-radius: 14px; border: 1px solid var(--outline-variant); }
+  .swatch-label { font-size: 11px; letter-spacing: 0.04em; }
+  .group-anchor { scroll-margin-top: 96px; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- HERO -->
+<header class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10"
+       style="background:
+         radial-gradient(60% 80% at 80% -10%, #ffe4c2 0%, transparent 60%),
+         radial-gradient(50% 60% at 0% 100%, #e1e1c9 0%, transparent 60%),
+         linear-gradient(180deg, #fff8f4 0%, #fff1e4 100%);"></div>
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 pt-16 pb-12 lg:pt-24 lg:pb-20">
+    <p class="text-[12px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">
+      Artisan Brew &middot; Premium Coffee App
+    </p>
+    <h1 class="font-serif text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.05] text-[color:var(--primary)] mt-3 max-w-4xl">
+      A complete mobile coffee experience, <em class="text-[color:var(--secondary)]">crafted screen by screen.</em>
+    </h1>
+    <p class="mt-6 text-[18px] leading-[28px] text-[color:var(--on-surface-variant)] max-w-2xl">
+      Explore <strong>32 high-fidelity screens</strong> &mdash; from the morning ritual home to the
+      Roast Master Class &mdash; built on a single, cohesive design system. Tap any screen to open it.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#screens" class="inline-flex items-center gap-2 px-6 h-12 rounded-full bg-[color:var(--primary)] text-white font-medium text-[14px] tracking-wide hover:opacity-90 active:scale-95 transition">
+        <span class="material-symbols-outlined text-[18px]">grid_view</span>
+        Browse all screens
+      </a>
+      <a href="#system" class="inline-flex items-center gap-2 px-6 h-12 rounded-full border border-[color:var(--outline-variant)] text-[color:var(--primary)] font-medium text-[14px] tracking-wide hover:bg-white active:scale-95 transition">
+        <span class="material-symbols-outlined text-[18px]">palette</span>
+        Design System
+      </a>
+      <a href="screens/artisan_brew_home.html" class="inline-flex items-center gap-2 px-6 h-12 rounded-full bg-white border border-[color:var(--outline-variant)] text-[color:var(--primary)] font-medium text-[14px] tracking-wide hover:bg-[color:var(--surface-container-low)] active:scale-95 transition">
+        <span class="material-symbols-outlined text-[18px]">play_arrow</span>
+        Open Home
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- DESIGN SYSTEM -->
+<section id="system" class="group-anchor max-w-6xl mx-auto px-6 lg:px-10 py-12 lg:py-16">
+  <div class="flex items-end justify-between flex-wrap gap-3 mb-8">
+    <div>
+      <p class="text-[12px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">01 &middot; Foundation</p>
+      <h2 class="font-serif text-[32px] lg:text-[40px] text-[color:var(--primary)] mt-1">Artisan Brew System</h2>
+    </div>
+    <a href="docs/artisan_brew_system/DESIGN.md" class="text-[14px] underline underline-offset-4 text-[color:var(--secondary)] hover:text-[color:var(--primary)]">
+      Open full DESIGN.md &rarr;
+    </a>
+  </div>
+
+  <!-- Color tokens -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-5 mb-10">
+    <!-- swatches -->
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#271310"></div><span class="swatch-label mt-2 font-medium">primary</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#271310</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#3e2723"></div><span class="swatch-label mt-2 font-medium">primary-container</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#3e2723</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#5e604d"></div><span class="swatch-label mt-2 font-medium">secondary</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#5e604d</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#e1e1c9"></div><span class="swatch-label mt-2 font-medium">secondary-cont.</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#e1e1c9</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#fff8f4;border:1px solid #d3c3c0"></div><span class="swatch-label mt-2 font-medium">surface</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#fff8f4</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#feddb3"></div><span class="swatch-label mt-2 font-medium">surface-c-highest</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#feddb3</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#ffebd3"></div><span class="swatch-label mt-2 font-medium">surface-cont.</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#ffebd3</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#f5d5ab"></div><span class="swatch-label mt-2 font-medium">surface-dim</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#f5d5ab</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#273103"></div><span class="swatch-label mt-2 font-medium">tertiary-cont.</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#273103</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#ba1a1a"></div><span class="swatch-label mt-2 font-medium">error</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#ba1a1a</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#827472"></div><span class="swatch-label mt-2 font-medium">outline</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#827472</span></div>
+    <div class="flex flex-col items-start"><div class="swatch" style="background:#ffdad4"></div><span class="swatch-label mt-2 font-medium">primary-fixed</span><span class="text-[11px] text-[color:var(--on-surface-variant)]">#ffdad4</span></div>
+  </div>
+
+  <!-- Typography -->
+  <div class="grid lg:grid-cols-2 gap-8">
+    <div class="bg-white rounded-2xl p-8 border border-[color:var(--outline-variant)]">
+      <p class="text-[11px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">Typography</p>
+      <p class="font-serif text-[40px] leading-[48px] text-[color:var(--primary)] mt-3">Display &mdash; Noto Serif 40/48</p>
+      <p class="font-serif text-[32px] leading-[40px] text-[color:var(--primary)] mt-4">Headline LG &mdash; 32/40</p>
+      <p class="font-serif text-[24px] leading-[32px] text-[color:var(--primary)] mt-2">Headline MD &mdash; 24/32</p>
+      <p class="text-[18px] leading-[28px] text-[color:var(--on-surface)] mt-4">Body LG &mdash; Be Vietnam Pro 18/28. Smooth, warm, and readable across long-form descriptions.</p>
+      <p class="text-[16px] leading-[24px] text-[color:var(--on-surface)] mt-2">Body MD &mdash; 16/24 for general copy.</p>
+      <p class="text-[14px] leading-[20px] text-[color:var(--on-surface-variant)] mt-2">Label MD &mdash; 14/20 / +0.02em</p>
+      <p class="text-[12px] leading-[16px] tracking-[0.05em] text-[color:var(--on-surface-variant)] mt-1 font-semibold uppercase">Label SM &mdash; 12/16 / 600</p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-8 border border-[color:var(--outline-variant)]">
+      <p class="text-[11px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">Components</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <button class="px-6 h-12 rounded-full bg-[color:var(--primary)] text-white text-[14px] font-medium">Primary CTA</button>
+        <button class="px-6 h-12 rounded-full bg-[color:var(--primary-container)] text-white text-[14px] font-medium">Primary container</button>
+        <button class="px-6 h-12 rounded-full bg-[color:var(--surface-container-highest)] text-[color:var(--primary)] text-[14px] font-medium">Tonal</button>
+        <button class="px-6 h-12 rounded-full border border-[color:var(--outline-variant)] text-[color:var(--primary)] text-[14px] font-medium">Outline</button>
+      </div>
+      <div class="mt-5 flex flex-wrap gap-2">
+        <span class="px-4 py-2 rounded-full bg-[color:var(--primary-container)] text-white text-[12px] tracking-wide">Classic</span>
+        <span class="px-4 py-2 rounded-full bg-[color:var(--surface-container-highest)] text-[color:var(--primary)] text-[12px] tracking-wide">Specialty</span>
+        <span class="px-4 py-2 rounded-full bg-[color:var(--secondary)] text-white text-[12px] tracking-wide">Seasonal</span>
+        <span class="px-4 py-2 rounded-full bg-[color:var(--tertiary-container)] text-white text-[12px] tracking-wide">Beans</span>
+      </div>
+      <div class="mt-6">
+        <div class="relative">
+          <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[color:var(--outline)]">search</span>
+          <input class="w-full h-[56px] pl-[52px] pr-4 rounded-xl bg-[color:var(--surface-container-low)] border border-[color:var(--outline-variant)] outline-none focus:border-[color:var(--primary)]" placeholder="Search our signature blends&hellip;" />
+        </div>
+      </div>
+      <div class="mt-6 grid grid-cols-2 gap-4">
+        <div class="rounded-xl overflow-hidden bg-white border border-[color:var(--outline-variant)]">
+          <div class="aspect-square bg-[color:var(--surface-container-high)]"></div>
+          <div class="p-4">
+            <h3 class="font-serif text-[16px] text-[color:var(--primary)] leading-tight">Velvet Espresso</h3>
+            <p class="text-[12px] text-[color:var(--on-surface-variant)] mt-1">Double shot, dark roast</p>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-[14px] font-medium">$4.50</span>
+              <span class="w-8 h-8 rounded-full bg-[color:var(--primary-container)] text-white flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">add</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-xl bg-[color:var(--surface-container-low)] border border-dashed border-[color:var(--outline-variant)] flex items-center justify-center text-[color:var(--on-surface-variant)] text-[12px]">
+          Product card pattern
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENS -->
+<section id="screens" class="group-anchor bg-[color:var(--surface-container-low)] border-y border-[color:var(--outline-variant)]">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-12 lg:py-16">
+    <div class="flex items-end justify-between flex-wrap gap-3 mb-8">
+      <div>
+        <p class="text-[12px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">02 &middot; Screens</p>
+        <h2 class="font-serif text-[32px] lg:text-[40px] text-[color:var(--primary)] mt-1">Every flow, end to end</h2>
+      </div>
+      <nav class="flex flex-wrap gap-2 text-[13px]">
+        <a href="#g-onboarding"   class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Onboarding</a>
+        <a href="#g-discovery"    class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Discovery</a>
+        <a href="#g-product"      class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Product</a>
+        <a href="#g-cart"         class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Cart &amp; Checkout</a>
+        <a href="#g-loyalty"      class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Loyalty</a>
+        <a href="#g-subs"         class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Subscriptions &amp; Gifts</a>
+        <a href="#g-education"    class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Education</a>
+        <a href="#g-profile"      class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Profile</a>
+        <a href="#g-empty"        class="px-3 py-1.5 rounded-full bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container)]">Empty States</a>
+      </nav>
+    </div>
+
+    <!-- Onboarding -->
+    <h3 id="g-onboarding" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-4 mb-4">Onboarding &amp; Auth</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_ONBOARDING-->
+    </div>
+
+    <!-- Discovery -->
+    <h3 id="g-discovery" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Home &amp; Discovery</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_DISCOVERY-->
+    </div>
+
+    <!-- Product -->
+    <h3 id="g-product" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Product Details</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_PRODUCT-->
+    </div>
+
+    <!-- Cart -->
+    <h3 id="g-cart" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Cart &amp; Checkout</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_CART-->
+    </div>
+
+    <!-- Loyalty -->
+    <h3 id="g-loyalty" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Loyalty &amp; Rewards</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_LOYALTY-->
+    </div>
+
+    <!-- Subs & Gifts -->
+    <h3 id="g-subs" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Subscriptions &amp; Gifts</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_SUBS-->
+    </div>
+
+    <!-- Education -->
+    <h3 id="g-education" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Brew Education</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_EDUCATION-->
+    </div>
+
+    <!-- Profile -->
+    <h3 id="g-profile" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Profile &amp; Account</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_PROFILE-->
+    </div>
+
+    <!-- Empty -->
+    <h3 id="g-empty" class="group-anchor font-serif text-[22px] text-[color:var(--primary)] mt-12 mb-4">Empty States</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!--CARDS_EMPTY-->
+    </div>
+  </div>
+</section>
+
+<!-- DOCS -->
+<section class="max-w-6xl mx-auto px-6 lg:px-10 py-12 lg:py-16">
+  <p class="text-[12px] tracking-[0.3em] uppercase text-[color:var(--on-surface-variant)] font-semibold">03 &middot; References</p>
+  <h2 class="font-serif text-[32px] lg:text-[40px] text-[color:var(--primary)] mt-1 mb-6">Product documentation</h2>
+  <div class="grid md:grid-cols-2 gap-5">
+    <a href="docs/product_requirements_document_coffee_app_product_page.md" class="block p-6 rounded-2xl bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container-low)]">
+      <p class="text-[12px] tracking-[0.2em] uppercase text-[color:var(--on-surface-variant)]">PRD</p>
+      <h3 class="font-serif text-[20px] text-[color:var(--primary)] mt-1">Product Details Page (v0)</h3>
+      <p class="text-[14px] text-[color:var(--on-surface-variant)] mt-2">Visual goals, functional requirements, and success metrics for the PDP.</p>
+    </a>
+    <a href="docs/detailed_prd_mobile_coffee_app_pdp_v1.0.md" class="block p-6 rounded-2xl bg-white border border-[color:var(--outline-variant)] hover:bg-[color:var(--surface-container-low)]">
+      <p class="text-[12px] tracking-[0.2em] uppercase text-[color:var(--on-surface-variant)]">PRD</p>
+      <h3 class="font-serif text-[20px] text-[color:var(--primary)] mt-1">PDP v1.0 &mdash; Detailed Spec</h3>
+      <p class="text-[14px] text-[color:var(--on-surface-variant)] mt-2">Section-by-section specification of the production PDP screen.</p>
+    </a>
+  </div>
+</section>
+
+<footer class="bg-[color:var(--primary)] text-white">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div>
+      <p class="font-serif italic text-[26px]">Artisan Brew</p>
+      <p class="text-[13px] opacity-70 mt-1">Curating the morning ritual &mdash; one screen at a time.</p>
+    </div>
+    <p class="text-[12px] opacity-60 tracking-wider uppercase">32 screens &middot; 1 design system &middot; 2 PRDs</p>
+  </div>
+</footer>
+
+<script>
+  // Build screen cards from a manifest. Each card links to screens/<slug>.html
+  // and shows the corresponding docs/<slug>/screen.png as its thumbnail.
+  const manifest = {
+    onboarding: [
+      ["welcome_to_artisan_brew",  "Welcome",            "Hero entry into the ritual"],
+      ["sign_in",                  "Sign In",            "Returning user auth"],
+      ["join_the_ritual",          "Join the Ritual",    "Account creation"],
+      ["verify_your_email",        "Verify Email",       "Email confirmation step"],
+    ],
+    discovery: [
+      ["artisan_brew_home",        "Home",               "Curating your morning ritual"],
+      ["search_discovery",         "Search & Discovery", "Find blends and origins"],
+      ["store_locator",            "Store Locator",      "Cafés near you"],
+    ],
+    product: [
+      ["product_details_flat_white",     "Flat White",            "Product details v1"],
+      ["product_details_flat_white_v2",  "Flat White v2",         "Product details refinement"],
+      ["ethiopian_yirgacheffe_detail",   "Ethiopian Yirgacheffe", "Single origin bean detail"],
+    ],
+    cart: [
+      ["your_cart",                "Your Cart",          "Bag review"],
+      ["your_basket_updated",      "Basket Updated",     "Mutation feedback"],
+      ["order_success",            "Order Success",      "Confirmation"],
+      ["order_confirmed_updated",  "Order Confirmed",    "Updated confirmation"],
+    ],
+    loyalty: [
+      ["loyalty_rewards",          "Loyalty Rewards",    "Points & tiers"],
+      ["reward_ready",             "Reward Ready",       "Redeemable reward"],
+      ["confirm_redemption",       "Confirm Redemption", "Use a reward"],
+      ["referral_program",         "Referral Program",   "Invite a friend"],
+    ],
+    subs: [
+      ["subscriptions",            "Subscriptions",      "Recurring deliveries"],
+      ["gift_a_ritual_1",          "Gift a Ritual",      "Gift flow — step 1"],
+      ["gift_a_ritual_2",          "Gift a Ritual II",   "Gift flow — step 2"],
+      ["personalize_your_gift",    "Personalize Gift",   "Add a personal note"],
+    ],
+    education: [
+      ["brew_journal",             "Brew Journal",       "Personal brewing log"],
+      ["roast_master_class",       "Roast Master Class", "Brewing course"],
+      ["roast_master_class_v60",   "Master Class · V60", "V60 brewing module"],
+      ["v60_the_bloom",            "V60 — The Bloom",    "First-stage bloom step"],
+    ],
+    profile: [
+      ["user_profile",             "User Profile",       "Account overview"],
+      ["settings",                 "Settings",           "Preferences"],
+      ["notifications",            "Notifications",      "Activity feed"],
+      ["help_support",             "Help & Support",     "Customer service"],
+    ],
+    empty: [
+      ["no_orders_yet",            "No Orders Yet",      "Empty orders state"],
+      ["no_favorites",             "No Favorites",       "Empty favorites state"],
+    ],
+  };
+
+  function cardHTML(slug, title, sub) {
+    return `
+      <a href="screens/${slug}.html" class="screen-card group block bg-white rounded-2xl overflow-hidden border border-[color:var(--outline-variant)]">
+        <div class="thumb-wrap relative">
+          <img src="docs/${slug}/screen.png" alt="${title} screen preview"
+               loading="lazy"
+               class="w-full h-full object-cover object-top"
+               onerror="this.style.display='none';this.parentElement.classList.add('thumb-fallback');" />
+          <span class="absolute top-3 right-3 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-white/90 text-[color:var(--primary)] text-[10px] tracking-widest uppercase font-semibold opacity-0 group-hover:opacity-100 transition">
+            Open <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+          </span>
+        </div>
+        <div class="p-4">
+          <h4 class="font-serif text-[18px] leading-tight text-[color:var(--primary)]">${title}</h4>
+          <p class="text-[12px] text-[color:var(--on-surface-variant)] mt-1">${sub}</p>
+          <p class="mt-3 text-[10px] tracking-[0.2em] uppercase text-[color:var(--secondary)] font-semibold">${slug}</p>
+        </div>
+      </a>`;
+  }
+
+  const groupKey = {
+    onboarding: 'CARDS_ONBOARDING',
+    discovery:  'CARDS_DISCOVERY',
+    product:    'CARDS_PRODUCT',
+    cart:       'CARDS_CART',
+    loyalty:    'CARDS_LOYALTY',
+    subs:       'CARDS_SUBS',
+    education:  'CARDS_EDUCATION',
+    profile:    'CARDS_PROFILE',
+    empty:      'CARDS_EMPTY',
+  };
+
+  for (const [g, items] of Object.entries(manifest)) {
+    const marker = `<!--${groupKey[g]}-->`;
+    // Find the comment node and replace
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_COMMENT, null, false);
+    let n; const targets = [];
+    while ((n = walker.nextNode())) {
+      if (n.nodeValue && n.nodeValue.trim() === groupKey[g]) targets.push(n);
+    }
+    const html = items.map(([s,t,d]) => cardHTML(s,t,d)).join('');
+    targets.forEach(c => {
+      const tpl = document.createElement('template');
+      tpl.innerHTML = html;
+      c.parentNode.insertBefore(tpl.content.cloneNode(true), c);
+      c.parentNode.removeChild(c);
+    });
+  }
+</script>
+
+</body>
+</html>

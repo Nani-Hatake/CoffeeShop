@@ -1,0 +1,121 @@
+
+
+<main class="relative min-h-screen pt-16 pb-20">
+<!-- Map View Container -->
+<div class="absolute inset-0 z-0 bg-surface-container-low">
+<div class="w-full h-full relative overflow-hidden custom-map-filter">
+<img class="w-full h-full object-cover opacity-60" data-alt="Aerial map view of an urban area with cream and beige color grading to match minimalist aesthetic" data-location="Portland" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHA8KIRGlgCHlEG2PDO4EIT1XLYWDaz7h82TFNFrPbOZ_gNQwtenF4kbUwP-DuMPlUd_R0yHiic2A4d84ALg5HtlRHwOikhBH76Ut5DxZYzflGweNmT8d2FlEwPCrLFYn8-X95bNFKxzPk4XA_tQ6N1u18QBnuMsdX8rrslCcLwiJAKs9X54KJ48KGX96IeOjM_DX3VgreAP2fy957GNXcs_ZI5w2mmoz8E5BL79WOtzpgm5OspKEghHRi2Dg1WhupGUVILl4QqRs"/>
+<!-- Custom Map Markers -->
+<div class="absolute top-[35%] left-[45%] flex flex-col items-center">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg border-2 border-white ring-4 ring-primary/10">
+<span class="material-symbols-outlined text-white text-sm" data-icon="coffee">coffee</span>
+</div>
+<div class="mt-1 bg-white/90 backdrop-blur px-2 py-1 rounded shadow-sm">
+<p class="text-[10px] font-bold tracking-tighter">Artisan Brew Central</p>
+</div>
+</div>
+<div class="absolute top-[55%] left-[25%] flex flex-col items-center">
+<div class="w-8 h-8 bg-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white ring-4 ring-primary/10">
+<span class="material-symbols-outlined text-white text-sm" data-icon="coffee">coffee</span>
+</div>
+</div>
+<div class="absolute top-[48%] left-[70%] flex flex-col items-center">
+<div class="w-8 h-8 bg-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white ring-4 ring-primary/10">
+<span class="material-symbols-outlined text-white text-sm" data-icon="coffee">coffee</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating UI Over Map -->
+<div class="relative z-10 px-margin-mobile flex flex-col h-[calc(100vh-144px)]">
+<!-- Search Interface -->
+<div class="mt-lg">
+<div class="bg-white/90 backdrop-blur-xl rounded-xl shadow-lg border border-stone-100 flex items-center p-md">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="ml-md bg-transparent border-none focus:ring-0 text-on-surface-variant font-body-md w-full placeholder:text-outline/60" placeholder="Find a café near you..." type="text"/>
+<button class="material-symbols-outlined text-primary" data-icon="tune">tune</button>
+</div>
+</div>
+<!-- Content Area - Pushed to Bottom -->
+<div class="mt-auto pb-lg">
+<div class="flex items-center justify-between mb-md">
+<h2 class="font-headline-md text-on-surface bg-white/40 backdrop-blur-sm rounded-full px-4 py-1">Nearby Locations</h2>
+<span class="text-label-md text-primary font-bold uppercase tracking-widest bg-white/40 backdrop-blur-sm rounded-full px-4 py-1">3 Found</span>
+</div>
+<!-- Horizontal Location Cards (Tactile & Airy) -->
+<div class="flex overflow-x-auto gap-gutter pb-4 -mx-5 px-5 no-scrollbar scroll-smooth snap-x">
+<!-- Card 1 -->
+<div class="min-w-[280px] snap-center bg-white shadow-[0_10px_40px_rgba(62,39,35,0.08)] rounded-xl overflow-hidden border border-stone-100">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Interior of a boutique coffee shop with warm wood accents and minimalist furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBssXoVWGf0g7_x4wpW-h4ZWMDt4gLiBcxPySWmJwiXTzrMKtw93Tl_TwIlIgWpp0F7kIGOZLy01JhL24jwz4JGRcXA0W3BZuKx5-QhtE1qETJivYWtdoQwfJFkJn58EdzlR6zwSAbQIjI9xBLJb-ATmR9eLJgotdILu_VPIkuo3UPPR_IbPlsg0tY0oWOYrKKc0uB6cSdpxhdvnhZU2i4HMQB5AGEYjvcvpb8QOc9v10sYIr4u4pdilxhQkn7UbpygcQvLIo-lydQ"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase tracking-widest">
+                                0.4 mi
+                            </div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-lg text-primary">Pearl District</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-xs">1248 NW 11th Ave, Portland</p>
+<div class="mt-md flex items-center justify-between">
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+<span class="text-label-sm text-stone-500">Open until 7 PM</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="directions">directions</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] snap-center bg-white shadow-[0_10px_40px_rgba(62,39,35,0.08)] rounded-xl overflow-hidden border border-stone-100">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist coffee counter with espresso machine and ceramic cups on a light stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxwplT0uJfVy23bYdLSTfXjkaiKHoVrOSfuJ11G9CgKyGJ-fptD32tI59-0PmbAmfhU35P2B8Z8QPUWZCFHcgMvH1klmFyAlM2_n8xKGWWz96tyoVy7sKlgNtf-2wTViUarBYJvxNbQDFDqUA82oT0hnU1AAAaoJFRx1zM3mDjX2JvNlyDbTCTEpLE93YKPIAhnJnsqHtPq_2piUsDTkxuAHO9ZsPHeiVlTgOuHZZkCfGk7H5syEq7TWLGfRSp8zD7pvSP9IM7_mg"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase tracking-widest">
+                                1.2 mi
+                            </div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-lg text-primary">Nob Hill Corner</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-xs">2102 NW 23rd Ave, Portland</p>
+<div class="mt-md flex items-center justify-between">
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+<span class="text-label-sm text-stone-500">Open until 7 PM</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="directions">directions</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[280px] snap-center bg-white shadow-[0_10px_40px_rgba(62,39,35,0.08)] rounded-xl overflow-hidden border border-stone-100 opacity-90">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Close-up of a latte in a white ceramic cup with steam on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpD5IsnPC-27X_A-SVyIolkxhZqgXyVpn-KxtX5vDwlx-eMBX7BJ-2LzAFn9998qX42NmRFR_sbVNupveYgiYxmmKGFyvyyb1SS5ZtxciQjb6t7i47s7flPG7uUhyPSQQYiQO2uL-BY5p3puhUmeR6Hfmqim2up9v2D1ea4Ejf6NhT2kIaRzj3PIFW4coWS_MkCCqm0bs2BAfoZMLyH7y8nUDoJOB7A5MQTnFkyQMjHCB2h491B7YSgSWIpPXasPevssAuLvzZdd0"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-primary uppercase tracking-widest">
+                                2.5 mi
+                            </div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-lg text-primary">Mississippi Ave</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-xs">3552 N Mississippi Ave, Portland</p>
+<div class="mt-md flex items-center justify-between">
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 rounded-full bg-orange-400"></div>
+<span class="text-label-sm text-stone-500">Closes at 6 PM</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="directions">directions</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Contextual FAB (Hidden as per hierarchy for Store Locator screen, but UI calls for a 'Current Location' button) -->
+<button class="fixed right-5 bottom-28 w-12 h-12 bg-white rounded-full shadow-lg border border-stone-100 flex items-center justify-center text-primary active:scale-90 transition-transform z-20">
+<span class="material-symbols-outlined" data-icon="my_location">my_location</span>
+</button>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brew Journal - Artisan Coffee Log</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .font-sans { font-family: 'Be Vietnam Pro', sans-serif; }
+        
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e4e4cc; border-radius: 10px; }
+        
+        .tactile-press:active { transform: scale(0.95); transition: transform 0.15s ease; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#fff1e4",
+                        "on-secondary": "#ffffff",
+                        "outline": "#827472",
+                        "surface-dim": "#f5d5ab",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "surface": "#fff8f4",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#ffebd3",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "on-secondary-container": "#636451",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "surface-tint": "#745853",
+                        "primary-container": "#3e2723",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#feddb3",
+                        "surface-bright": "#fff8f4",
+                        "secondary": "#5e604d",
+                        "on-surface": "#281801",
+                        "inverse-surface": "#402d10",
+                        "inverse-primary": "#e3beb8",
+                        "on-background": "#281801",
+                        "on-surface-variant": "#504442",
+                        "inverse-on-surface": "#ffeedb",
+                        "surface-container-high": "#ffe4c2",
+                        "on-tertiary-fixed": "#171e00",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-primary-fixed": "#2b1613",
+                        "on-primary-container": "#ae8d87",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#273103",
+                        "primary": "#271310",
+                        "on-secondary-fixed-variant": "#474836",
+                        "background": "#fff8f4",
+                        "outline-variant": "#d3c3c0",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#feddb3",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#8d9a61",
+                        "tertiary": "#141b00",
+                        "primary-fixed-dim": "#e3beb8",
+                        "tertiary-fixed": "#dbe9a9",
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "secondary-container": "#e1e1c9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "32px",
+                        "margin-mobile": "20px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "unit": "4px",
+                        "sm": "8px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-lg": ["Noto Serif"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"],
+                        "display-lg": ["Noto Serif"],
+                        "label-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-surface-variant">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="bg-[#FDFCFB] dark:bg-stone-950 flex items-center justify-between px-6 h-16 w-full fixed top-0 z-50 border-b border-stone-200/60 dark:border-stone-800 shadow-sm shadow-[#3E2723]/5">
+<button class="text-[#3E2723] dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors p-2 rounded-full active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-serif italic text-xl text-[#3E2723] dark:text-stone-100 tracking-tight">Brew Journal</h1>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-surface-variant active:scale-95 transition-transform">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional man in a minimalist studio with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqNNGCQ6HK5JPGmmdQKnyrstL8R4V0i6pk70naYjdPpl3NitSLs2owh1RWsrTMlJImFUusvYIpWHKscnhoMvD1noONs1OfN8Ni21-nfVnU_6T-CM6g2aIxtsX0yex0C82s3vVH3TDjvpAeDQTZvFZ-s5DKwXP4M-rpvnYn_e340ynj7FWbxYl-9UQCC2DFeD3ThpXQo9OIUIO2mC7WvX_qR08k1BbfNyT7gc0vhDS0mvVN7lLdM68sUoUnFjbsCvtLTOr9Z1T0OaY"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile max-w-screen-xl mx-auto">
+<!-- Editorial Hero Section -->
+<section class="mb-xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-lg flex flex-col justify-center order-2 md:order-1">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-sm">FEATURED ORIGIN</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Ethiopian Yirgacheffe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg leading-relaxed">
+                            A delicate balance of floral jasmine and bright citrus notes. This harvest from the Gedeo zone represents the peak of high-altitude processing.
+                        </p>
+<div class="flex gap-sm">
+<span class="px-md py-xs bg-surface-container-highest text-primary rounded-full text-label-sm font-label-sm">Citrus</span>
+<span class="px-md py-xs bg-surface-container-highest text-primary rounded-full text-label-sm font-label-sm">Floral</span>
+</div>
+</div>
+<div class="h-64 md:h-full min-h-[300px] order-1 md:order-2">
+<img alt="Coffee Beans" class="w-full h-full object-cover" data-alt="Artistic overhead shot of light-roasted coffee beans scattered on a textured ceramic surface with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgg9JBfNLwDwjLLCQ8DhzPwoC_WVnAEKfspWauGQqe1_cTimeqWtkj6IzUoHxatQYsLkXFx8Nt_OSqakDmzOy8EeM02KywQehuazNLARa_zG1-qqyKyWx6FL684uJm1957GSuOLv8NmdFzM4VTP8V5kffzXiVeoKytZI8yp36sv-5RNCO92Vvdce4cGjrDgWoNbEhrKHh8qpZOYi-QUhgzPX1B7t8vqUwnIev53I0lxoYSoHPn7RIooTaZDo6WrYBbzKYMYrOOfg4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Magazine Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Dark Chocolate Card (Large/Bento style) -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(62,39,35,0.04)] overflow-hidden border border-surface-container">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 h-72 md:h-auto">
+<img alt="Dark Roast" class="w-full h-full object-cover" data-alt="Rich dark roasted coffee beans in a wooden scoop on a dark espresso colored table, moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBjK5K5CqtZxfJc7bHSUzdcMx1TYdeLOEJn7koA8tKpR7EpRswuzB29nIB1hfhLrKb6nS284O32ukpanRMLccElzcz8xBPRIkEJK_LLXxQWOdO4_tJ0aagQxQX3t65xRA-88lOaVvWxX4lwQP28LN1OMmgU8nfkMICzGgsbRSm7hXIua91xdYMNLRIE2ONzeavEKxdo0rIzZ1E5Yf_yJxZmddDthMeOVIJyZJcfwYWvOKTtrBfDaUlQufYreUV9-kQYU_7qDXls3Q"/>
+</div>
+<div class="p-lg md:w-1/2 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<span class="text-label-sm font-label-sm text-on-secondary-container">SUMATRA GAYO</span>
+<span class="material-symbols-outlined text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Dark Chocolate &amp; Earth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-lg">
+                            Heavy body with a lingering sweetness. Traditional wet-hulled processing brings out the characteristic cedar and forest floor notes.
+                        </p>
+<button class="h-14 bg-primary text-on-primary rounded-lg font-label-md tactile-press">Read Tasting Notes</button>
+</div>
+</div>
+</div>
+<!-- Single Column Editorial Note -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-lg flex flex-col justify-between border border-surface-container">
+<div>
+<span class="material-symbols-outlined text-outline mb-md text-4xl" data-icon="format_quote">format_quote</span>
+<p class="font-serif italic text-lg text-primary leading-tight mb-md">
+                        "The ritual of the grind is as vital as the sip itself. Patience reveals the bean's true character."
+                    </p>
+</div>
+<div class="pt-md border-t border-outline-variant">
+<p class="font-label-sm text-on-surface-variant uppercase">Brew Master's Log</p>
+<p class="font-body-md text-primary">Vol. 12 • The Harvest Cycle</p>
+</div>
+</div>
+<!-- Citrus/Light Roast Card -->
+<div class="md:col-span-4 group bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(62,39,35,0.04)] overflow-hidden border border-surface-container transition-all hover:-translate-y-1">
+<div class="aspect-[4/5]">
+<img alt="Light Roast" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all" data-alt="Close up of a glass dripper with coffee being brewed, highlighting clear bright amber liquid and citrus slices nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDF0iljeblBOdlWMu7Vcjn2A8cbvX5kDYyefuA2YJ31pqL-IVweE7gQEODSVqZexH01YhE_Dqvyh9e8qBgcV293FWn5M4SOPVEoV1rp84iMO7PfLt-L0O24YASPH8tSbnUMM0nHDaI6Kn0lurRILP2gKpuy8PQGJ19_M1mLa5xhaSDJdaIAtOlhbhbDGv7oEJj6P7qDrK30XHKBeQPx1n-bN1J4tavnOM2lKqtyOFIG9srHUejN5M5Y4wCoXf81YLVWJsBga4wdL0"/>
+</div>
+<div class="p-md">
+<div class="flex gap-xs mb-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-sm" data-icon="circle" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-label-sm font-label-sm text-outline uppercase">Light Roast</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Kenya Nyeri</h4>
+<p class="text-label-md font-label-md text-on-tertiary-container">Notes: Citrus, Tomato, Plum</p>
+</div>
+</div>
+<!-- Earthy Roast Card -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(62,39,35,0.04)] overflow-hidden border border-surface-container">
+<div class="aspect-[4/5]">
+<img alt="Earthy Roast" class="w-full h-full object-cover" data-alt="Atmospheric shot of a rustic wooden coffee table with a single cup of black coffee and raw coffee cherries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKmHvS1oDe_TEijSgciet6eo93LioDuya94fyCqDpKxvV8jPbmWvGIv1-z6eIW1MtVbV_rb9sEKX-vzVoYw0xkhA60mr_3vxAsow9ZoXQOewSXxcySDIkJiO6IeLLqmNE6CDgG9WYlMh_-ASLc69yUZatGMjpoI0n8eYWsdjCLn5kqa0sVvEP6PBcX_9JyoYj7hlfLPr56sXmFxIv_wL9hM1_RqO3qLoRbxJrJXatpMbNu9OobR9_wfElbV_hgl4zJmHlInHMZ4CY"/>
+</div>
+<div class="p-md">
+<div class="flex gap-xs mb-xs">
+<span class="material-symbols-outlined text-outline text-sm" data-icon="circle" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class="text-label-sm font-label-sm text-outline uppercase">Medium Roast</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Brazil Cerrado</h4>
+<p class="text-label-md font-label-md text-on-secondary-container">Notes: Nutty, Earth, Caramel</p>
+</div>
+</div>
+<!-- Stats/Journal Summary -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-lg flex flex-col justify-between">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" data-icon="menu_book">menu_book</span>
+<span class="text-label-sm bg-on-primary-container/20 px-sm py-1 rounded-full">Monthly View</span>
+</div>
+<div>
+<h4 class="text-display-lg font-display-lg leading-none">124</h4>
+<p class="text-label-md text-on-primary-container uppercase tracking-widest mt-xs">Journal Entries</p>
+</div>
+<div class="space-y-sm mt-lg">
+<div class="flex justify-between text-label-sm border-b border-on-primary-container/20 pb-xs">
+<span>Consistency Score</span>
+<span>88%</span>
+</div>
+<div class="flex justify-between text-label-sm border-b border-on-primary-container/20 pb-xs">
+<span>New Beans Logged</span>
+<span>+12</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#FDFCFB]/95 backdrop-blur-md dark:bg-stone-950/95 flex justify-around items-center h-20 pb-safe px-4 border-t border-stone-200/60 dark:border-stone-800 shadow-[0_-4px_12px_rgba(62,39,35,0.04)]">
+<a class="flex flex-col items-center text-stone-400 dark:text-stone-500 hover:text-[#3E2723] dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Discover</span>
+</a>
+<a class="flex flex-col items-center text-stone-400 dark:text-stone-500 hover:text-[#3E2723] dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center text-[#3E2723] dark:text-stone-100 font-bold scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Journal</span>
+</a>
+<a class="flex flex-col items-center text-stone-400 dark:text-stone-500 hover:text-[#3E2723] dark:hover:text-stone-200 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

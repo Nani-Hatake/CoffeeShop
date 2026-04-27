@@ -1,0 +1,73 @@
+
+<!-- Top Navigation Bar - Suppressed labels as per "Success" screen rule, keeping brand anchor -->
+<header class="flex justify-between items-center px-5 h-16 w-full fixed top-0 z-50 bg-[#FAF9F6] dark:bg-[#121212] border-b border-stone-200 dark:border-stone-800 shadow-sm dark:shadow-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#3E2723] dark:text-[#D7CCC8] hover:opacity-80 transition-opacity cursor-pointer">close</span>
+</div>
+<h1 class="font-serif italic text-2xl text-[#3E2723] dark:text-[#EDE7E3]">Artisan Brew</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-margin-mobile pt-24 pb-12">
+<!-- Success Illustration Section -->
+<div class="w-full max-w-md text-center space-y-lg">
+<div class="relative inline-block">
+<!-- Outer Ring -->
+<div class="absolute inset-0 scale-125 border border-primary-container/10 rounded-full animate-pulse"></div>
+<!-- Main Circle -->
+<div class="relative w-32 h-32 bg-primary-container rounded-full flex items-center justify-center soft-shadow">
+<span class="material-symbols-outlined text-surface text-6xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="space-y-sm">
+<h2 class="font-headline-lg text-headline-lg text-primary">Order Placed!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px] mx-auto">Your artisanal ritual is being prepared with care and precision.</p>
+</div>
+</div>
+<!-- Bento Grid Info Summary -->
+<div class="w-full max-w-md mt-xl grid grid-cols-2 gap-md">
+<!-- Delivery Time Card -->
+<div class="col-span-2 bg-surface-container-low p-md rounded-xl flex items-center gap-md border border-outline-variant/30">
+<div class="w-12 h-12 bg-primary-container/10 rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Estimated Arrival</p>
+<p class="font-headline-md text-headline-md text-primary">12 - 18 mins</p>
+</div>
+</div>
+<!-- Order Details Bento -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant/20 soft-shadow flex flex-col justify-between">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Order ID</p>
+<p class="font-body-lg text-body-lg font-bold text-primary">#AB-9421</p>
+</div>
+<!-- Items Count Bento -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant/20 soft-shadow flex flex-col justify-between">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Total Items</p>
+<p class="font-body-lg text-body-lg font-bold text-primary">3 Drinks</p>
+</div>
+<!-- Map/Location Preview (Decorative) -->
+<div class="col-span-2 relative h-32 rounded-xl overflow-hidden border border-outline-variant/20 soft-shadow">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="stylized minimalistic map view of a city street in soft beige and brown tones with a single gold pin marking a location" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIucjUClh98suAWbCJlDKn66ItuEUsTMIkgaYa7aSHy03pY_aTV4XvkaizSFIrp5YWGeBfBS5JsywTpDE7gKTFVy62v_EVLAG2oLGRG_Sx4nw5EGnQvqCdqa-f_5dP3M_hHbZWW46_-78zAIB1DN4CO351vlIvH6c5GCZophC1zebhdiBOmSgOobx3rGrMFGvKqYAzSBvWTf2eCUGZBReG2fe6vmRtyeI29dne2uN0T4N59D3xSiPzPOt_IbdO4ys2bs7S5NkWPx0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="font-label-md text-label-md text-primary">Oak &amp; Willow Boutique</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full max-w-md mt-xl space-y-md">
+<button class="w-full h-[56px] bg-primary-container text-surface rounded-lg font-label-md flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all">
+                Order Tracking
+                <span class="material-symbols-outlined text-lg">near_me</span>
+</button>
+<button class="w-full h-[56px] border border-outline-variant text-primary rounded-lg font-label-md flex items-center justify-center gap-2 hover:bg-surface-container-low active:scale-95 transition-all">
+                Back to Menu
+            </button>
+</div>
+</main>
+<!-- Shared Bottom Nav is suppressed for Transactional Success Screen as per UX mandate -->
+<!-- Secondary footer element for brand consistency -->
+<footer class="pb-12 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant/60">A confirmation email has been sent to your inbox.</p>
+</footer>

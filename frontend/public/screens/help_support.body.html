@@ -1,0 +1,129 @@
+
+<!-- Top AppBar (from JSON) -->
+<nav class="bg-[#FDFBF7] dark:bg-[#1A1412] docked full-width top-0 border-b border-[#D7CCC8] dark:border-[#3E2723] sticky z-50">
+<div class="flex justify-between items-center px-5 h-16 w-full max-w-screen-xl mx-auto">
+<span class="material-symbols-outlined text-[#3E2723] dark:text-[#EFEBE9] cursor-pointer" data-icon="menu">menu</span>
+<h1 class="text-xl font-serif font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Artisan Brew</h1>
+<span class="material-symbols-outlined text-[#3E2723] dark:text-[#EFEBE9] cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="max-w-screen-xl mx-auto px-margin-mobile pt-lg pb-32">
+<!-- Hero Section -->
+<header class="mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">How can we assist your ritual?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Our baristas are here to ensure every pour is perfect. Explore common topics or reach out directly.</p>
+</header>
+<!-- Search Bar -->
+<div class="relative mb-xl">
+<div class="absolute inset-y-0 left-0 pl-md flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full h-[56px] pl-12 pr-md bg-surface-container-low border border-outline-variant rounded-xl font-body-md focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-outline" placeholder="Search FAQs, brewing guides..." type="text"/>
+</div>
+<!-- Common Topics: Bento Grid Pattern -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-md mb-xl">
+<!-- Featured Topic: Brewing Tips -->
+<div class="md:col-span-2 relative h-64 rounded-xl overflow-hidden shadow-sm group cursor-pointer border border-outline-variant">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of high quality coffee being brewed with a glass dripper and soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTHpuoYeJaniO7HiY2WXuAMvqAUhD4vpqHfokZ9apLCbxHIkQKnFMZUy2BzHvK2p1hQX5Sug1k_IFe2wZz-12K8pe15KNApBAxpe_Y-1L4xMtZW3bSNRCY6Bgr0U-JBZi16wNzo8XSgSvAPcMau4vwt5S8fUUl0CILfV7LF6XI5aWSnb0ER6IkO3cK4YWH8N6J9kf8CdAVPmBfQvpC8PlCdU5WoN4_upfpP_ZACUGt0wtK6phFH6882HP6GD0BnWIkTCDPDqau85s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg">
+<span class="inline-block px-sm py-xs bg-surface-variant text-on-surface font-label-sm rounded-md mb-sm">PRO TIPS</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Brewing Tips</h3>
+<p class="font-body-md text-surface-container-low/90">Perfect your morning pour-over technique.</p>
+</div>
+</div>
+<!-- Order Tracking -->
+<div class="bg-surface-container-high rounded-xl p-lg flex flex-col justify-between shadow-sm border border-outline-variant hover:bg-surface-container-highest transition-colors cursor-pointer">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-surface-bright" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Order Tracking</h3>
+<p class="font-body-md text-on-surface-variant">Real-time updates on your roast arrival.</p>
+</div>
+</div>
+<!-- Subscription Info -->
+<div class="bg-surface-container-low rounded-xl p-lg flex flex-col justify-between shadow-sm border border-outline-variant hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-white" data-icon="calendar_today">calendar_today</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Subscription Info</h3>
+<p class="font-body-md text-on-surface-variant">Manage your recurring bean delivery.</p>
+</div>
+</div>
+<!-- More Help Items -->
+<div class="bg-surface-container-low rounded-xl p-lg flex flex-col justify-between shadow-sm border border-outline-variant hover:bg-surface-container-high transition-colors cursor-pointer md:col-span-2">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="payments">payments</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Billing &amp; Refunds</h3>
+<p class="font-body-md text-on-surface-variant">Secure payment and returns policy.</p>
+</div>
+</div>
+<div class="flex justify-end mt-md">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Primary CTA: Live Chat with a Barista -->
+<section class="bg-primary-container rounded-xl p-xl flex flex-col md:flex-row items-center gap-xl relative overflow-hidden">
+<!-- Decorative Grain/Texture (Pseudo-element approach via div) -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+<div class="flex-1 z-10">
+<h2 class="font-headline-lg text-headline-lg text-surface-bright mb-sm">Need expert advice?</h2>
+<p class="font-body-lg text-body-lg text-surface-container-low mb-lg">Our master baristas are online to help you dial in your grind or find the perfect roast profile.</p>
+<button class="h-[56px] px-xl bg-surface-bright text-primary font-label-md rounded-full shadow-lg hover:bg-surface-variant transition-all flex items-center gap-sm">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+                    Live Chat with a Barista
+                </button>
+</div>
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-surface-container-highest/20 z-10 flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="professional barista smiling while holding a steaming pitcher of milk in a high-end coffee shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hDGvtNKzL0q9P6_TFWvsqAHTa7QKILzxSc1DGiqRDcw9j5DTveHa-n0tfagvqFt7c9d0LTKtpFnOwcRSsVpvghxfwitcAh7GQaIwEQDuHIrM6jo5Hlz1uFGaBtDpIMx9NzIIihS0SXqJt60wa4tCoVcj70IYZMIz4WxfFNxoKeRf9k2tdHv9Dlo1pnNBmlXHL-SiBdmX5f4oTKO6dbSCzFU4J2O-itupi6HBCAOOuxWgKdgIDST2Ujayu8V0Rqvar4inQa5XemQ"/>
+</div>
+</section>
+<!-- Contact Options -->
+<footer class="mt-xl grid grid-cols-1 md:grid-cols-2 gap-lg border-t border-outline-variant pt-xl">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-outline" data-icon="mail">mail</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Email Support</h4>
+<p class="font-body-md text-on-surface-variant">hello@artisanbrew.com</p>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-outline" data-icon="call">call</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Concierge Line</h4>
+<p class="font-body-md text-on-surface-variant">1-800-ART-BREW</p>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (from JSON) -->
+<nav class="sticky bottom-0 w-full z-50 border-t border-[#D7CCC8] dark:border-[#3E2723] bg-[#FDFBF7] dark:bg-[#1A1412] shadow-[0_-4px_12px_rgba(62,39,35,0.05)]">
+<div class="sticky bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-safe">
+<!-- Discover -->
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-[#795548] hover:text-[#3E2723] dark:hover:text-[#EFEBE9] cursor-pointer">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Discover</span>
+</div>
+<!-- Orders -->
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-[#795548] hover:text-[#3E2723] dark:hover:text-[#EFEBE9] cursor-pointer">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Orders</span>
+</div>
+<!-- Favorites -->
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-[#795548] hover:text-[#3E2723] dark:hover:text-[#EFEBE9] cursor-pointer">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1">Favorites</span>
+</div>
+<!-- Support (Active) -->
+<div class="flex flex-col items-center justify-center text-[#3E2723] dark:text-[#EFEBE9] scale-105 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-serif text-[11px] uppercase tracking-widest mt-1 font-bold">Support</span>
+</div>
+</div>
+</nav>

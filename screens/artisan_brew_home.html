@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#273103",
+                        "secondary": "#5e604d",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "on-background": "#281801",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#281801",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#141b00",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-container": "#ffebd3",
+                        "surface-bright": "#fff8f4",
+                        "surface": "#fff8f4",
+                        "outline": "#827472",
+                        "inverse-surface": "#402d10",
+                        "surface-container-high": "#ffe4c2",
+                        "on-primary-container": "#ae8d87",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e4e4cc",
+                        "surface-tint": "#745853",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#271310",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#d3c3c0",
+                        "secondary-container": "#e1e1c9",
+                        "primary-container": "#3e2723",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#feddb3",
+                        "on-tertiary-fixed": "#171e00",
+                        "surface-container-low": "#fff1e4",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#ffeedb",
+                        "tertiary-fixed": "#dbe9a9",
+                        "on-surface-variant": "#504442",
+                        "on-primary-fixed": "#2b1613",
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "surface-variant": "#feddb3",
+                        "inverse-primary": "#e3beb8",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#636451",
+                        "surface-dim": "#f5d5ab",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "on-tertiary-container": "#8d9a61",
+                        "on-secondary-fixed-variant": "#474836",
+                        "primary-fixed": "#ffdad4",
+                        "primary-fixed-dim": "#e3beb8",
+                        "background": "#fff8f4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "unit": "4px",
+                        "xl": "32px",
+                        "sm": "8px",
+                        "margin-mobile": "20px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Noto Serif"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="bg-[#FAF9F6] dark:bg-[#121212] flex justify-between items-center px-5 h-16 w-full fixed top-0 z-50 border-b border-stone-200 dark:border-stone-800 shadow-sm dark:shadow-none">
+<div class="flex items-center gap-4">
+<button class="text-[#3E2723] dark:text-[#D7CCC8] hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-serif italic text-2xl text-[#3E2723] dark:text-[#EDE7E3]">Artisan Brew</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#3E2723] dark:text-[#D7CCC8] hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="flex-1 mt-16 mb-20 px-margin-mobile">
+<!-- Greeting Section -->
+<section class="py-lg">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Good Morning</p>
+<h1 class="font-headline-lg text-headline-lg text-primary mt-xs">Curating your morning ritual.</h1>
+</section>
+<!-- Search Bar -->
+<section class="mb-lg">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors" data-icon="search">search</span>
+<input class="w-full h-[56px] pl-[52px] pr-md bg-surface-container-low border border-outline-variant rounded-xl focus:ring-0 focus:border-primary font-body-md text-body-md transition-all outline-none" placeholder="Search our signature blends..." type="text"/>
+</div>
+</section>
+<!-- Categories -->
+<section class="mb-lg -mx-margin-mobile overflow-x-auto no-scrollbar flex gap-sm px-margin-mobile">
+<button class="flex-shrink-0 px-lg py-sm bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md transition-transform active:scale-95">Classic</button>
+<button class="flex-shrink-0 px-lg py-sm bg-surface-container-highest text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-secondary-container transition-all active:scale-95">Specialty</button>
+<button class="flex-shrink-0 px-lg py-sm bg-surface-container-highest text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-secondary-container transition-all active:scale-95">Seasonal</button>
+<button class="flex-shrink-0 px-lg py-sm bg-surface-container-highest text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-secondary-container transition-all active:scale-95">Beans</button>
+</section>
+<!-- Product Grid -->
+<section class="grid grid-cols-2 gap-gutter pb-lg">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(62,39,35,0.05)] flex flex-col">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Artisan Espresso" class="w-full h-full object-cover" data-alt="Close-up of a double shot espresso with rich golden crema in a ceramic white cup on a dark stone surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDx75dobwEI4P4gs3X7qn8BaIHPGjNwp19YcXPiUw6MBXwa8sjNUNFkEyI2_RTEWFC5u1AJODxhF4BlV5PKyb9QTR7pyhDHpMXo4cpvcHwEuJV5bJ0a3mu2VAczNfdP8-lPofRuEF4-a0M2WIhb_GZgUVh634t4gx_c8SawQCcvdEJVbW86Ht3FS0U-h1fAQzKpyHhyaq50DoMdCbZ8veD17SJyRmJqwkFC3tZHr-fpPgrB0T7nkQiCaI_Sxxtl6q5T04cmG5mRw8"/>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-headline-md text-[16px] leading-tight text-primary">Velvet Espresso</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-xs">Double shot, dark roast</p>
+<div class="mt-auto pt-sm flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$4.50</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(62,39,35,0.05)] flex flex-col">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Oat Milk Latte" class="w-full h-full object-cover" data-alt="A beautifully poured oat milk latte with heart-shaped latte art in a minimalist clay mug with soft window lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwM9SP9k168_yODAhJKCf-F1K7zS0AG_qTpiQVHifpxW2gWvOWKzXkWHgNg_s_n1KmzAEiFdH0N7X6eIiW8uMKxEQrebNsjUQ62myj_H3fKSmXRV1-zt-QO5VQ03ZUoJKV66RbbPFEiAqQzrasbqAz5bPVfK_y6-vxthT2Tg8Dm5fmQt0oRmcD34UMEAaJrLdn_qdd1Ivelahh6nkGGK_kS10HDxB6Ijx4wABZ9tO41YCfVmcxe1RJEZdMXrxNb9E_gJHakqFSo9U"/>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-headline-md text-[16px] leading-tight text-primary">Signature Latte</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-xs">Oat milk, vanilla bean</p>
+<div class="mt-auto pt-sm flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$6.25</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(62,39,35,0.05)] flex flex-col">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Pour Over" class="w-full h-full object-cover" data-alt="Chemex pour over coffee maker with steaming hot coffee being filtered through white paper, professional cafe setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1BQEWjpFqHlsC6pfYqCD33cXgIPgDDwmZ_uXY2mD0ENEAERTyJmAVcx6phmp579mW9eLNK2XE6F7fsBY--nOnOhW6vKfq1rXLEHJMwGQZbq0VbmC0GpzVc0MORgK3orWTs1USInlm_pd3nOx34d_NHwF0d3R8bMCDZx8nGQkiZtu8HE113ArsJa7mcQNDB5nraWmRX-uaQI1z8HP65GLYRcBzl9PWaVThZEuPXWVDByqg2hCyqRQIjn5g1b0qNTaLNcBKhb56isk"/>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-headline-md text-[16px] leading-tight text-primary">Ethiopian Bloom</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-xs">Hand-poured, floral</p>
+<div class="mt-auto pt-sm flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$5.75</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(62,39,35,0.05)] flex flex-col">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Cold Brew" class="w-full h-full object-cover" data-alt="Cold brew coffee in a tall glass with large clear ice cubes and a splash of milk swirling into the dark liquid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALoJeKjxgx7ZYfDD2k1ad3aTywOMANqMsZeoGq6Qk15iYDaJyuoIAFFJAG8RueNCiwqkNrNOgT8p5HS8fQdxVl2Tnb-bAh9223nuXoxx2uy8k6-Os1VHyI0bZqo1OVHtRsWimZndvLwncmHTB9RiSXcoE7uckcStYO4N8PEgOCeiEiB2KllPdKquibUs56fE-A2iRu_g34geGScL8c0oeFKUv0PsxwRL_8TRWD7o954w-ZJ5lHpeadgyg5afPUycWLKbpB-aYF9H0"/>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-headline-md text-[16px] leading-tight text-primary">24hr Cold Brew</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-xs">Steeped long, low acid</p>
+<div class="mt-auto pt-sm flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$5.00</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 pb-safe bg-[#FAF9F6] dark:bg-[#121212] border-t border-stone-200 dark:border-stone-800 shadow-[0_-2px_10px_rgba(62,39,35,0.05)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#3E2723] dark:text-[#EDE7E3] scale-110 transition-transform font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<!-- Menu -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#3E2723] dark:hover:text-[#EDE7E3] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="coffee">coffee</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Menu</span>
+</a>
+<!-- Orders -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#3E2723] dark:hover:text-[#EDE7E3] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Orders</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600 hover:text-[#3E2723] dark:hover:text-[#EDE7E3] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+<!-- Contextual FAB -->
+<button class="fixed bottom-24 right-6 w-14 h-14 rounded-full bg-primary text-on-primary shadow-lg flex items-center justify-center active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</body></html>

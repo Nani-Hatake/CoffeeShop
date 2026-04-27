@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+            scroll-behavior: smooth;
+        }
+        .soft-haptic:active {
+            transform: scale(0.96);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#273103",
+                        "secondary": "#5e604d",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "on-background": "#281801",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#281801",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#141b00",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-container": "#ffebd3",
+                        "surface-bright": "#fff8f4",
+                        "surface": "#fff8f4",
+                        "outline": "#827472",
+                        "inverse-surface": "#402d10",
+                        "surface-container-high": "#ffe4c2",
+                        "on-primary-container": "#ae8d87",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e4e4cc",
+                        "surface-tint": "#745853",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#271310",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#d3c3c0",
+                        "secondary-container": "#e1e1c9",
+                        "primary-container": "#3e2723",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#feddb3",
+                        "on-tertiary-fixed": "#171e00",
+                        "surface-container-low": "#fff1e4",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#ffeedb",
+                        "tertiary-fixed": "#dbe9a9",
+                        "on-surface-variant": "#504442",
+                        "on-primary-fixed": "#2b1613",
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "surface-variant": "#feddb3",
+                        "inverse-primary": "#e3beb8",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#636451",
+                        "surface-dim": "#f5d5ab",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "on-tertiary-container": "#8d9a61",
+                        "on-secondary-fixed-variant": "#474836",
+                        "primary-fixed": "#ffdad4",
+                        "primary-fixed-dim": "#e3beb8",
+                        "background": "#fff8f4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "unit": "4px",
+                        "xl": "32px",
+                        "sm": "8px",
+                        "margin-mobile": "20px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["beVietnamPro"],
+                        "display-lg": ["notoSerif"],
+                        "body-lg": ["beVietnamPro"],
+                        "headline-lg": ["notoSerif"],
+                        "body-md": ["beVietnamPro"],
+                        "label-sm": ["beVietnamPro"],
+                        "headline-md": ["notoSerif"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="bg-[#FAF9F6] dark:bg-[#121212] flex justify-between items-center px-5 h-16 w-full fixed top-0 z-50 shadow-sm dark:shadow-none border-stone-200 dark:border-stone-800">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[#3E2723] dark:text-[#D7CCC8]">arrow_back</span>
+</button>
+<h1 class="font-serif italic text-2xl text-[#3E2723] dark:text-[#EDE7E3]">Your Basket</h1>
+<div class="w-6"></div>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile max-w-md mx-auto">
+<!-- Item Section -->
+<section class="mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Order Details</h2>
+<!-- Cart Item: Flat White -->
+<div class="bg-surface-container-low rounded-xl p-md shadow-sm border border-outline-variant/30 flex items-center gap-md">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="close-up of a beautifully poured flat white with intricate latte art in a ceramic cup on a wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgmFZvwo8LPDDnxgD1m6h_21jTuGfAkhDpUWDLMhnmvC7gbjf9Y9Tbor4ROWYI3y2prfuyl8kMlUv4ocvJSg7sdVqW8LXMNFnS2Z6U3rlOHMDtadlNyIUoaBEuo7ulLUdp_O1IQN_vgzJpjp3H2n5H1ayMHQzxbAPr8Sus6-VOhmp-5s2G4aDPGj0wAGQrYtUTbSlTOxI0P_OfsXC5s1yflqhiC8hAKsyxGGPQlijcwI78yU2L9j3sDYmp0qhCjO-oY8tS0SVEC-8"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-[18px] text-primary">Flat White</h3>
+<p class="font-body-md text-label-md text-on-surface-variant">Medium • Oat Milk</p>
+</div>
+<span class="font-label-md text-primary font-bold">$4.50</span>
+</div>
+<div class="flex items-center justify-between mt-sm">
+<div class="flex items-center gap-xs">
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-label-md px-sm">1</span>
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="text-error font-label-sm">Remove</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery/Collection Method -->
+<section class="mb-lg">
+<div class="flex gap-sm p-xs bg-surface-container-highest rounded-full">
+<button class="flex-1 py-sm px-md rounded-full bg-primary-container text-on-primary-container font-label-md text-center">
+                    Delivery
+                </button>
+<button class="flex-1 py-sm px-md rounded-full text-on-surface-variant font-label-md text-center">
+                    Pickup
+                </button>
+</div>
+</section>
+<!-- Delivery Address (Placeholder for design feel) -->
+<section class="mb-lg bg-surface-container-low rounded-xl p-md border border-outline-variant/30">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<h4 class="font-label-md text-primary font-bold">Delivery Address</h4>
+</div>
+<p class="font-body-md text-on-surface-variant ml-8">24 Artisan Row, Brew District</p>
+<button class="ml-8 mt-xs text-primary font-label-sm underline">Change</button>
+</section>
+<!-- Order Summary Breakdown -->
+<section class="bg-surface-container-low rounded-xl p-md border border-outline-variant/30 mb-xl">
+<h4 class="font-label-md text-primary font-bold mb-md">Summary</h4>
+<div class="space-y-sm">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface-variant">Subtotal</span>
+<span class="font-body-md text-primary">$4.50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface-variant">Delivery Fee</span>
+<span class="font-body-md text-primary">$1.50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface-variant">Service Charge</span>
+<span class="font-body-md text-primary">$0.50</span>
+</div>
+<div class="pt-sm mt-sm border-t border-outline-variant/50 flex justify-between items-center">
+<span class="font-headline-md text-primary">Total</span>
+<span class="font-headline-md text-primary">$6.50</span>
+</div>
+</div>
+</section>
+<!-- Checkout Button -->
+<div class="fixed bottom-0 left-0 w-full p-margin-mobile bg-background/80 backdrop-blur-md z-40 border-t border-outline-variant/20">
+<button class="w-full h-14 bg-primary text-on-primary rounded-lg font-label-md text-lg tracking-wide shadow-lg soft-haptic flex items-center justify-center gap-sm">
+                Order Now
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed for transactional screen logic, using focus layout instead) -->
+</body></html>

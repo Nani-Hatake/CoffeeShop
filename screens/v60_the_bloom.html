@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "surface-variant": "#feddb3",
+                        "on-tertiary-fixed": "#171e00",
+                        "on-surface": "#281801",
+                        "surface-bright": "#fff8f4",
+                        "tertiary-fixed": "#dbe9a9",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#273103",
+                        "surface": "#fff8f4",
+                        "on-surface-variant": "#504442",
+                        "secondary": "#5e604d",
+                        "background": "#fff8f4",
+                        "on-secondary-container": "#636451",
+                        "surface-container": "#ffebd3",
+                        "on-tertiary-container": "#8d9a61",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-container-highest": "#feddb3",
+                        "primary-container": "#3e2723",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#141b00",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#e3beb8",
+                        "on-primary-container": "#ae8d87",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e1e1c9",
+                        "primary": "#271310",
+                        "inverse-on-surface": "#ffeedb",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "outline-variant": "#d3c3c0",
+                        "surface-tint": "#745853",
+                        "on-background": "#281801",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "inverse-surface": "#402d10",
+                        "on-primary-fixed": "#2b1613",
+                        "inverse-primary": "#e3beb8",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#827472",
+                        "surface-dim": "#f5d5ab",
+                        "surface-container-high": "#ffe4c2",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-secondary-fixed-variant": "#474836",
+                        "surface-container-low": "#fff1e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "16px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-progress-bar {
+            height: 2px;
+            width: 100%;
+            background-color: #e1e1c9;
+            position: relative;
+        }
+        .step-progress-active {
+            height: 2px;
+            background-color: #3e2723;
+            width: 40%;
+            transition: width 0.5s ease;
+        }
+        .timer-ring {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .blur-backdrop {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- Header Navigation Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/50 shadow-sm shadow-stone-900/5">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-300">
+<span class="material-symbols-outlined text-stone-900" data-icon="close">close</span>
+</button>
+</div>
+<h1 class="font-serif italic text-xl text-stone-900 tracking-wide">The Ritual</h1>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a professional barista with a focused expression, soft natural lighting in a modern cafe setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5fqLRUjMB8wsnEaOBsHw2KaX7RjbfYiIt1SAhMuY3kNst8yGrVZ3YQ2JMmhRxcWk_cd1jO5_t96MMu_4-cDSiPKGggScZxbMXSPUiPQm66PJhNpJx9goQ9UIemZV157eNYbxiv8aRvE9ksqYZY69T_WQA6uthFAgfQQbCnEi4KRLeKsYHnSsUi8O3LROLYuO91mmdkTPJpeMYFnn0JmoyRLwhOm_YniciyChY0vbA3Gjq7XEPqI8WS_--TQ8QNdfZWO0A_No1HAw"/>
+</div>
+</header>
+<!-- Progress Bar (Sub-Header) -->
+<div class="fixed top-16 w-full z-40 bg-background/80 backdrop-blur-sm">
+<div class="step-progress-bar">
+<div class="step-progress-active" style="width: 33%;"></div>
+</div>
+<div class="px-margin-mobile py-2 flex justify-between items-center">
+<span class="font-label-sm text-on-surface-variant">STEP 2 OF 6</span>
+<span class="font-label-sm text-primary tracking-widest uppercase">The Bloom</span>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-32 min-h-screen flex flex-col">
+<!-- Large Featured Image Section -->
+<section class="px-margin-mobile mb-lg">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl shadow-[#3E2723]/10">
+<img alt="V60 Brewing" class="w-full h-full object-cover" data-alt="Extreme close-up of hot water being poured from a copper gooseneck kettle onto freshly ground coffee in a ceramic V60, showing the coffee bubbling and expanding during the bloom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg88lE4VUMp0A5onERs6_bx_Rs4AqMz4A77hz7_LjQq0k7uRqvRcqPj7MwOBG_Ody8ZD7B5sTzh14YOlRtUHrZ23hN1BM3Du6YF6-n8-MQfAKQN9s0M31P1jgnE8_qTFEeU5MB0T15cMMNEcV2ucyJtHVPiTtsRr-iZgq3UKhUnsDkFCY96zvEFyImUHv2F5ivQ6CuDT33Gq4uVx9pwn5ro1QAoutmWPmLJK2MUMvTj7eHWFRoOJh6wQelxuy-jJk9X0tSfCfpqlA"/>
+<!-- Floating Timer Overlay -->
+<div class="absolute bottom-6 right-6 flex items-center justify-center">
+<div class="relative w-20 h-20 bg-stone-50/90 rounded-full blur-backdrop shadow-lg flex flex-col items-center justify-center">
+<svg class="absolute inset-0 w-full h-full">
+<circle class="text-stone-200 stroke-current" cx="40" cy="40" fill="transparent" r="36" stroke-width="2"></circle>
+<circle class="text-primary-container stroke-current timer-ring" cx="40" cy="40" fill="transparent" r="36" stroke-dasharray="226.2" stroke-dashoffset="70" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<span class="font-display-lg text-primary text-xl relative z-10">24</span>
+<span class="font-label-sm text-[8px] text-stone-500 relative z-10">SECONDS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Instructions Section -->
+<section class="px-margin-mobile flex-grow">
+<div class="max-w-md mx-auto">
+<div class="mb-md">
+<h2 class="font-headline-lg text-primary mb-xs">Awaken the Grounds</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                        Gently pour 50g of water in a spiral motion. Ensure all grounds are saturated. This releases trapped CO2, preparing the bed for even extraction.
+                    </p>
+</div>
+<!-- Guidance Chips -->
+<div class="flex gap-sm flex-wrap mb-lg">
+<div class="px-md py-sm bg-surface-container-low rounded-full border border-outline-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="water_drop">water_drop</span>
+<span class="font-label-md text-on-surface">50g Water</span>
+</div>
+<div class="px-md py-sm bg-surface-container-low rounded-full border border-outline-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="thermostat">thermostat</span>
+<span class="font-label-md text-on-surface">94°C</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Action Area -->
+<section class="fixed bottom-0 left-0 w-full px-margin-mobile pb-8 pt-4 bg-gradient-to-t from-background via-background to-transparent z-40">
+<div class="max-w-md mx-auto flex flex-col gap-md">
+<button class="w-full h-14 bg-primary-container text-on-primary rounded-lg font-label-md tracking-widest uppercase shadow-lg shadow-stone-900/20 active:scale-95 transition-transform flex items-center justify-center gap-3">
+                    Next Step
+                    <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+<div class="flex justify-center gap-8">
+<button class="flex items-center gap-2 text-stone-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="replay">replay</span>
+<span class="font-label-sm">RESTART STEP</span>
+</button>
+<button class="flex items-center gap-2 text-stone-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-label-sm">TIPS</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button Suppression - As per rules: suppressed on focused detail pages -->
+<!-- Global Navigation suppresses on Task-Focused sub-pages -->
+<!-- (No BottomNavBar or SideNav rendered for this linear journey) -->
+</body></html>

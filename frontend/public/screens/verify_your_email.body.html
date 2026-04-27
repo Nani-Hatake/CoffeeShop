@@ -1,0 +1,58 @@
+
+<!-- Header / TopAppBar -->
+<header class="bg-[#FCF9F1] dark:bg-[#1C1917] border-b border-stone-200/60 dark:border-stone-800/60 shadow-[0_2px_15px_-3px_rgba(62,39,35,0.07)] sticky top-0 z-50">
+<div class="flex items-center justify-between px-5 h-16 w-full max-w-screen-md mx-auto">
+<button class="w-10 h-10 flex items-center justify-start text-[#3E2723] hover:bg-stone-100/50 transition-colors rounded-full active:opacity-80">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-serif italic font-medium text-[#3E2723] dark:text-[#F5F5F4] text-lg tracking-tight">The Coffee Ritual</h1>
+<div class="w-10"></div> <!-- Spacer for center alignment -->
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-margin-mobile py-xl max-w-screen-sm mx-auto w-full">
+<!-- Verification Content -->
+<div class="w-full space-y-xl text-center">
+<!-- Minimalist Icon Section -->
+<div class="relative mx-auto w-24 h-24 flex items-center justify-center rounded-full bg-surface-container-low shadow-[0_4px_20px_-5px_rgba(62,39,35,0.1)] mb-lg">
+<div class="absolute inset-0 rounded-full border border-primary-container/10"></div>
+<span class="material-symbols-outlined text-[48px] text-primary-container" data-icon="mail">mail</span>
+</div>
+<!-- Heading & Message -->
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Check your Email</h2>
+<p class="font-body-lg text-body-md text-on-surface-variant max-w-xs mx-auto">
+                    We've sent a 4-digit code to your inbox.
+                </p>
+</div>
+<!-- OTP Code Entry -->
+<div class="flex justify-center gap-gutter py-lg">
+<input aria-label="Digit 1" class="code-input w-14 h-20 text-center text-[32px] font-headline-md bg-surface-container-low border border-outline-variant rounded-xl text-primary transition-all duration-300" maxlength="1" placeholder="·" type="text"/>
+<input aria-label="Digit 2" class="code-input w-14 h-20 text-center text-[32px] font-headline-md bg-surface-container-low border border-outline-variant rounded-xl text-primary transition-all duration-300" maxlength="1" placeholder="·" type="text"/>
+<input aria-label="Digit 3" class="code-input w-14 h-20 text-center text-[32px] font-headline-md bg-surface-container-low border border-outline-variant rounded-xl text-primary transition-all duration-300" maxlength="1" placeholder="·" type="text"/>
+<input aria-label="Digit 4" class="code-input w-14 h-20 text-center text-[32px] font-headline-md bg-surface-container-low border border-outline-variant rounded-xl text-primary transition-all duration-300" maxlength="1" placeholder="·" type="text"/>
+</div>
+<!-- CTA Actions -->
+<div class="space-y-lg pt-md">
+<button class="w-full h-[56px] bg-primary-container text-on-primary font-label-md rounded-full shadow-[0_4px_15px_-3px_rgba(62,39,35,0.2)] active:scale-[0.98] transition-transform">
+                    Verify Ritual
+                </button>
+<div class="flex flex-col items-center gap-sm">
+<span class="text-label-sm text-on-surface-variant">Haven't received the code?</span>
+<button class="text-primary font-label-md border-b border-primary/20 hover:border-primary transition-all active:opacity-70">
+                        Resend Code
+                    </button>
+</div>
+</div>
+</div>
+<!-- Decorative Asymmetric Element -->
+<div class="mt-xl w-full">
+<div class="relative overflow-hidden rounded-3xl h-48 w-full group">
+<img alt="Artisan coffee bar" class="w-full h-full object-cover grayscale-[20%] sepia-[10%] opacity-80" data-alt="Close-up of a minimalist coffee shop counter with a single ceramic cup and soft morning light through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzDojPOXhGMiLqd8L9It3AMbYcW2q315qbS2r42hB-BfzLIIWL1XAD-_YLo430NZ78alChhj6Wi7AqMkt8QE7QQQ-y73WxYEyr0uzPtyqR71NlEIkn-QpHT8fhz93O5ECxPoAAg-s8Hc5-ghcV9Squ8WQaoULgvzi4bnEvNRmTeZjqvCTbyYKQS3r7E6uApwPmUA66DjCGYLoXDAjX1_X7lYCI9UpKJTnDFS7AIjojvpkKnHau12wvHcPmPPCQXT8ETRZ81yX9HrY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<p class="font-headline-md text-white text-body-md italic">"The ritual begins in the quiet moments."</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Semantic Shell Suppression: BottomNavBar is hidden because this is a focused transactional verification screen -->

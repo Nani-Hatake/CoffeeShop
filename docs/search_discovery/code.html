@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#273103",
+                        "tertiary": "#141b00",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "surface-container": "#ffebd3",
+                        "error": "#ba1a1a",
+                        "background": "#fff8f4",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#402d10",
+                        "on-tertiary-container": "#8d9a61",
+                        "on-surface-variant": "#504442",
+                        "surface-tint": "#745853",
+                        "primary-fixed": "#ffdad4",
+                        "primary-container": "#3e2723",
+                        "inverse-on-surface": "#ffeedb",
+                        "on-surface": "#281801",
+                        "surface-dim": "#f5d5ab",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "primary": "#271310",
+                        "surface-container-high": "#ffe4c2",
+                        "on-primary-container": "#ae8d87",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#e3beb8",
+                        "secondary-container": "#e1e1c9",
+                        "on-secondary-container": "#636451",
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "on-background": "#281801",
+                        "secondary": "#5e604d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#feddb3",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "on-primary-fixed": "#2b1613",
+                        "error-container": "#ffdad6",
+                        "surface": "#fff8f4",
+                        "on-secondary-fixed-variant": "#474836",
+                        "outline": "#827472",
+                        "surface-bright": "#fff8f4",
+                        "primary-fixed-dim": "#e3beb8",
+                        "surface-bright": "#fff8f4",
+                        "primary-fixed-dim": "#e3beb8",
+                        "surface-variant": "#feddb3",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-tertiary-fixed": "#171e00",
+                        "tertiary-fixed": "#dbe9a9",
+                        "surface-container-low": "#fff1e4",
+                        "outline-variant": "#d3c3c0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "32px",
+                        "unit": "4px",
+                        "margin-mobile": "20px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "xs": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"],
+                        "label-sm": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f4;
+            color: #281801;
+            -webkit-font-smoothing: antialiased;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md bg-background min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-stone-50/95 dark:bg-stone-950/95 shadow-sm dark:shadow-none border-b border-stone-200/50 dark:border-stone-800/50">
+<button class="text-stone-900 hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-serif text-lg tracking-tight font-bold text-stone-900">Artisan Brew</h1>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-stone-200">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a sophisticated person with warm lighting and a soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAccm9p8LlI4zQt_174FVoTndpv7U1etqVDUFwDfRc_3mZ2o2_24TMpDpPfHRx5Aiycnjb-UGYYva3sOIyejZRstUGlrSEnBkZ8HcoMWcQHLvdp21VjLPazWrgnK1wrQbk1ekIQ785DvYdoX8T8Lozg9Is8znMHgXArMb3TZToIO3M-ce3kYc5sgEOX0A-J2oJDI0pJ7OlH8V6hKxMqlQJmYh298uo18eaxj1ncI8k0K4BkoFztGjlK6D343rp-VxaUu8SMQOaaxII"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-5">
+<!-- Search Section -->
+<section class="mb-lg">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline" data-icon="search">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-low border border-outline-variant rounded-lg focus:outline-none focus:border-primary transition-colors font-body-md text-on-surface-variant" placeholder="Search our signature blends..." type="text"/>
+</div>
+</section>
+<!-- Categories -->
+<section class="mb-xl -mx-5">
+<div class="flex overflow-x-auto no-scrollbar gap-sm px-5">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-on-primary font-label-md transition-transform active:scale-95">All</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md hover:bg-surface-variant transition-colors">Classic</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md hover:bg-surface-variant transition-colors">Specialty</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md hover:bg-surface-variant transition-colors">Seasonal</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md hover:bg-surface-variant transition-colors">Beans</button>
+</div>
+</section>
+<!-- Editorial Grid -->
+<section class="grid grid-cols-2 gap-gutter">
+<!-- Featured Product (Asymmetric) -->
+<div class="col-span-2 group">
+<div class="relative aspect-[16/9] rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(62,39,35,0.08)] mb-md">
+<img alt="Signature Pour Over" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cinematic shot of steaming hot coffee being poured from a glass carafe into a ceramic mug on a wooden table with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAC8euMIzieOvtLKQtQP_Q3o0qB49XtsH5qaS5mDqEs901mxjZXZHLYERzdQlgzFLsvb1CRuMSpgdKlUSZRA_T08q13mImfXAVIEZsWap8fkHuJcfX4ONcK_Ft3IkGaOhQsuI92O_GXg3OgTEJzQI4Dt6DfVQekU78EqyEIK3pbZS520rvdECXYB9rqs0lSVHNVi7Cdgf4F1oqBuh89H4fwGkPDWvubA5PmSGCUlYsx-mIIS5avON-PmVzUJA4Gu1EiUkVujnwjTY"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full text-label-sm">
+                        Curated
+                    </div>
+</div>
+<div class="px-xs">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Ethiopian Yirgacheffe</h3>
+<p class="font-body-md text-on-surface-variant mb-2">Floral notes with a citrus finish, masterfully roasted.</p>
+<span class="font-label-md text-primary font-bold">$18.50</span>
+</div>
+</div>
+<!-- Grid Items -->
+<div class="group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(62,39,35,0.05)] mb-md">
+<img alt="Velvet Latte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Detailed close up of latte art in a white ceramic cup on a stone coaster with warm mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-EPh9bsoipCqiHIjtEdxhVal7GAWXEOlcfo8VHvLOlwNksP_1eAw-HlI-g7WB99NGJM6Nk26Y0U6TGknvv-2GFZRFfIume5C3QEyIanyu1iImzPGwLdo54uOwiNElTiV0p7TIuff0gEUINqTffrUXwDQvP79oCrzja0bpabyTGtfTfkYErwVR6wPasJcxF4t7FK3Vali9_bVCewpw_cEZtvtfto8bQ2S_jpviKYvoB_ULchxugV0aCszbbxV-aoua6IBmJGdQ5O4"/>
+</div>
+<div class="px-xs">
+<h4 class="font-headline-sm text-on-surface font-semibold mb-xs">Velvet Latte</h4>
+<span class="font-label-md text-outline">$6.50</span>
+</div>
+</div>
+<div class="group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(62,39,35,0.05)] mb-md">
+<img alt="Cold Brew Reserve" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Amber glass bottle of cold brew coffee resting on a slab of rough dark wood next to a glass of ice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8kA6hEB35lZLgkrNCZBabKbltYaE6C3C1_aS6Oz7wau_oIkkloNcwP8cO56zeBuuzzWHvvjp-whXVIAuTbV_DDTAGZqwwn9C3iY1bV72LmzZijSu6Qgc-Bf40DzLcZL6zfxgjqtBojKbR-2_HLC2lbx8fYHptSt52KnqA_vwPzqX4DMMCPwJG9fUgf911Ck78nsNQuApBasbHxuHSsQSPP__wu6vfLvSc0-0wZJ9-Evoy3u-tQu_EiTI9SDsxGiuPdQWPF1jvj4E"/>
+</div>
+<div class="px-xs">
+<h4 class="font-headline-sm text-on-surface font-semibold mb-xs">Cold Brew</h4>
+<span class="font-label-md text-outline">$7.00</span>
+</div>
+</div>
+<div class="group">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(62,39,35,0.05)] mb-md">
+<img alt="Espresso Macchiato" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Small porcelain cup of espresso with a dollop of white foam on a dark textured background with dramatic side light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDArnXHE_L-8YExLYHE19Nm7X4IwplVQaqjqDa9VLeg6zz-k42QfxB4w2gGMrVaVec8D00mqEm6wPIUHIM6vb6w9SeQD9d9ZUHyXajBY6-Yg2US-TilsEIOnHp-QCNnmdMk2MepFw42I6cMDMiIzQAjC41wJzug6TXXsXibXfzz89VrzOe8tBQzTOgevtFiokSZ_p1q9w8Ql5RXcPLi4w9OW6ydf6wAB0JJWAa2akg_ITUwKMkqq7ZKuwI-cavbIIem4JjcvKBiBcs"/>
+</div>
+<div class="px-xs">
+<h4 class="font-headline-sm text-on-surface font-semibold mb-xs">Macchiato</h4>
+<span class="font-label-md text-outline">$5.50</span>
+</div>
+</div>
+<div class="group">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(62,39,35,0.05)] mb-md">
+<img alt="Honduran Whole Beans" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal brown paper coffee bag standing on a shelf surrounded by roasted coffee beans and a vintage grinder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDoNEyYFwUoL9_eC3jIkiN_88TyuwEQValrLbeWkXFORlEwzpCkr9d2hggW-5NDZthTvIJOzQ1zozdwuLNcN9OmDIqvRZOOkhP4tzpbbDcl7qd6a-vfS674E2KHtLR6lmZp1jfO9vL-AcaFreTwwk8QSWRYsAEfEuLrvc0zexOBV7S9-MV1gM22pzOpaN53CH5t7LTTZwVzy_WUmbnimAK82fxEMij40kdwmVHKDHeZkyCW-t-3sWolhihQyzYJoHmgjxLnjrGMCg"/>
+</div>
+<div class="px-xs">
+<h4 class="font-headline-sm text-on-surface font-semibold mb-xs">Estate Beans</h4>
+<span class="font-label-md text-outline">$24.00</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-stone-50 dark:bg-stone-950 shadow-[0_-4px_12px_rgba(62,39,35,0.05)] border-t border-stone-200 dark:border-stone-800">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-900 dark:text-stone-100 font-bold border-t-2 border-stone-900 dark:border-stone-100 pt-2 translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

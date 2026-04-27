@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,500&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#fff8f4",
+                    "on-tertiary-fixed": "#171e00",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "tertiary": "#141b00",
+                    "primary-fixed-dim": "#e3beb8",
+                    "on-tertiary-fixed-variant": "#404b1b",
+                    "on-primary-container": "#ae8d87",
+                    "outline": "#827472",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-tertiary-container": "#8d9a61",
+                    "primary-fixed": "#ffdad4",
+                    "secondary": "#5e604d",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#feddb3",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#ffebd3",
+                    "on-primary-fixed": "#2b1613",
+                    "inverse-on-surface": "#ffeedb",
+                    "background": "#fff8f4",
+                    "tertiary-fixed": "#dbe9a9",
+                    "secondary-container": "#e1e1c9",
+                    "inverse-surface": "#402d10",
+                    "surface-bright": "#fff8f4",
+                    "on-surface-variant": "#504442",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#636451",
+                    "surface-variant": "#feddb3",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#273103",
+                    "primary-container": "#3e2723",
+                    "surface-container-low": "#fff1e4",
+                    "outline-variant": "#d3c3c0",
+                    "surface-container-high": "#ffe4c2",
+                    "on-surface": "#281801",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#745853",
+                    "surface-dim": "#f5d5ab",
+                    "primary": "#271310",
+                    "on-secondary-fixed-variant": "#474836",
+                    "inverse-primary": "#e3beb8",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#bfcd8f",
+                    "on-background": "#281801"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "unit": "4px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "xl": "32px",
+                    "margin-mobile": "20px",
+                    "sm": "8px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "headline-md": ["Noto Serif"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-lg": ["Noto Serif"],
+                    "display-lg": ["Noto Serif"],
+                    "body-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-premium {
+            text-shadow: 0 2px 4px rgba(62, 39, 35, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body-md overflow-x-hidden">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- Welcome Canvas -->
+<main class="relative min-h-screen w-full flex flex-col justify-between overflow-hidden">
+<!-- Background Narrative Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Artisan coffee preparation" class="w-full h-full object-cover" data-alt="Cinematic close-up of a professional barista pouring steaming hot water over coffee grounds, soft morning light filtering through wispy steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIgs0NU-DLFSSoTRoAyfaMXLOruuGGy_aDa3BgSK__SEL_Yxn_YmdUJ70UlMIQ9gLMeDW2Xczg7NHlEdEXhIW_uYvljhEMe9MoCk6B_gtTnrD_o7yba_qg0AsQ7bWJBKqeU1x6s6zTwV4D7-uwmSD54DAJRJFl1l0DFtDuZxjI0vEEhdrjm6Pgds3JKM66NuXNwNZh1RjddRfqyi6Rbc4QsnPP2ZOo1aupCo5r_BnhoEi40LuvlMS9d-We5L8nG-KkLohrrnASFRw"/>
+<!-- Tonal Overlay for Readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+</div>
+<!-- Top Branding Section -->
+<header class="relative z-10 pt-xl px-margin-mobile flex justify-center">
+<div class="text-center">
+<h1 class="font-display-lg text-display-lg text-surface-container-lowest tracking-tighter italic">
+                    Artisan Brew
+                </h1>
+<div class="mt-xs w-12 h-0.5 bg-surface-variant mx-auto rounded-full"></div>
+</div>
+</header>
+<!-- Centered Storytelling/Value Proposition -->
+<section class="relative z-10 px-margin-mobile flex flex-col items-center text-center max-w-md mx-auto">
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-surface tracking-tight leading-tight">
+                    Artisanal rituals,<br/>delivered to your door.
+                </h2>
+<p class="font-body-lg text-body-lg text-surface/80 max-w-[280px] mx-auto">
+                    Experience the quiet luxury of small-batch roasting from the world's most remote hills.
+                </p>
+</div>
+</section>
+<!-- Action & Onboarding -->
+<footer class="relative z-10 px-margin-mobile pb-xl flex flex-col gap-md w-full max-w-md mx-auto">
+<!-- Primary Action -->
+<button class="w-full h-[56px] bg-primary-container text-on-primary font-label-md rounded-xl shadow-lg flex items-center justify-center gap-sm active:scale-95 transition-transform">
+                Get Started
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Secondary Actions -->
+<div class="flex flex-col items-center gap-sm">
+<a class="font-label-md text-surface/90 hover:text-surface transition-colors" href="#">
+                    Sign In
+                </a>
+<!-- Bottom Decorative Divider -->
+<div class="w-24 h-px bg-surface/20 mt-md"></div>
+<p class="font-label-sm text-surface/60 uppercase tracking-[0.2em] mt-sm">
+                    Est. 2024
+                </p>
+</div>
+</footer>
+<!-- Decorative Elements: Texture and Vignette -->
+<div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,transparent_0%,rgba(39,19,16,0.2)_100%)]"></div>
+</main>
+<!-- Aesthetic Floating Detail for Premium Feel -->
+<div class="fixed top-1/2 -right-8 -translate-y-1/2 opacity-10 rotate-90 pointer-events-none select-none">
+<span class="font-display-lg text-[120px] text-surface-variant whitespace-nowrap">AUTHENTIC</span>
+</div>
+</body></html>

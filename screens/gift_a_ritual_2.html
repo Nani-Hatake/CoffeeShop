@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gift a Ritual - Artisan Brew</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "surface-variant": "#feddb3",
+                        "on-tertiary-fixed": "#171e00",
+                        "on-surface": "#281801",
+                        "surface-bright": "#fff8f4",
+                        "tertiary-fixed": "#dbe9a9",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#273103",
+                        "surface": "#fff8f4",
+                        "on-surface-variant": "#504442",
+                        "secondary": "#5e604d",
+                        "background": "#fff8f4",
+                        "on-secondary-container": "#636451",
+                        "surface-container": "#ffebd3",
+                        "on-tertiary-container": "#8d9a61",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-container-highest": "#feddb3",
+                        "primary-container": "#3e2723",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#141b00",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#e3beb8",
+                        "on-primary-container": "#ae8d87",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e1e1c9",
+                        "primary": "#271310",
+                        "inverse-on-surface": "#ffeedb",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "outline-variant": "#d3c3c0",
+                        "surface-tint": "#745853",
+                        "on-background": "#281801",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "inverse-surface": "#402d10",
+                        "on-primary-fixed": "#2b1613",
+                        "inverse-primary": "#e3beb8",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#827472",
+                        "surface-dim": "#f5d5ab",
+                        "surface-container-high": "#ffe4c2",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-secondary-fixed-variant": "#474836",
+                        "surface-container-low": "#fff1e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "16px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif", "serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "label-sm": ["Be Vietnam Pro", "sans-serif"],
+                        "label-md": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-md": ["Noto Serif", "serif"],
+                        "headline-lg": ["Noto Serif", "serif"],
+                        "serif": ["Noto Serif", "serif"],
+                        "sans": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .tonal-shift-tan-to-crema {
+            background: linear-gradient(to bottom, #e1e1c9, #fff8f4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-sans min-h-screen pb-32">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/50 shadow-sm shadow-stone-900/5">
+<button class="text-stone-900 hover:opacity-80 transition-opacity active:scale-95 duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-serif italic text-xl text-stone-900 tracking-wide">The Ritual</h1>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-stone-200">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a refined man in a linen shirt in a sun-drenched minimalist interior with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9mxjjtMzNrLbyyzY8Jv8tS6hDzrbIRMFacVvSU5k_sLIf5nLekRJYlB6mm-VNiiHo6sRAB33gDEZiUtt6qbWBkTioOMEDwQhuVI6SdbL0LJ0X2bgYTV94I6-wDyMvktoeZteGv0CxgHyJEe19f24_MYDKF39iGQxODLK7Z-XgCkDkQvCfs3YUFqZD_LVKADJBEiq2q70xrF1IGZEdOxZ6je97d6P5aiVilOvhb7smIeOmNIVCiF-9pQYO-rpKLrQ2L2T1LK77IAg"/>
+</div>
+</header>
+<main class="pt-24 px-margin-mobile">
+<!-- Hero Section -->
+<section class="mb-lg">
+<h2 class="font-display-lg text-display-lg text-primary mb-sm leading-tight">
+                Share the coffee ritual with someone special.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                An invitation to pause, breathe, and savor the finest artisanal roasts.
+            </p>
+</section>
+<!-- Premium Gift Card Carousel -->
+<section class="mb-xl">
+<div class="flex justify-between items-end mb-md">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-widest">Gift Card Designs</span>
+<span class="text-xs font-medium text-primary">Slide to explore</span>
+</div>
+<div class="flex gap-md overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-4">
+<!-- Card 1 -->
+<div class="snap-center shrink-0 w-[85%] aspect-[1.58/1] rounded-2xl overflow-hidden shadow-xl relative group">
+<img class="w-full h-full object-cover brightness-75" data-alt="close-up of a perfectly poured latte with intricate leaf art in a dark ceramic cup on a weathered wood table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhFRi_hwPYobSzB-G9Wz8lgzUNaF1Y4Uns6zUE0C5Mfg6h-K3slU-KnsCtNMkIP1Xs6Zg92O76uA5bz6EcmmOaqzpTQnoQD5iKHjO40U4tQW75P8J9l_qPkBTb9v_v9vbIANgxfcqMWaMAGow48kMI90GcnvQCCW7Bl-d3zP1cTUvpWUITuk4twZDv1pBYKXsVpon7tPDtkngEV_VUl_n-kxGnVADG0yNZCiPviCETogocskjN0LOfXEQmT5Lp80niOaByn2StB2w"/>
+<div class="absolute inset-0 p-lg flex flex-col justify-between text-white">
+<span class="font-serif italic text-lg opacity-90">The Ritual</span>
+<div>
+<p class="text-xs font-label-sm uppercase tracking-[0.2em] mb-1">Digital Gift Card</p>
+<p class="font-display-lg text-2xl">Warmth in a Cup</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-center shrink-0 w-[85%] aspect-[1.58/1] rounded-2xl overflow-hidden shadow-xl relative">
+<img class="w-full h-full object-cover brightness-50" data-alt="dark roasted coffee beans scattered on a textured charcoal surface with dramatic warm directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBavMkzPFA4y9MwyCaaJ3Z0RbnrCtfMTk3NGIRQ4LuJdhqzFg6ddElIrm06QU0wVV6G-ep37U-NROjTCxneDERk6Y29lwgAsqxgcSqAp6y4VuxJcUjsrENy9MJbxQtnjfwW-E-K8ReaQU3SNsDi6e09Ew6sIiWM2u6NCGxXQPxi870OTqFhscX3-xvtNEJZEIlboDjIDKgZMptD9y2tH4Iyrg_KABJulaNGUL_VxoR-u5pUM8-ARER4fl6ixO6gAmulyDtssKPTBfA"/>
+<div class="absolute inset-0 p-lg flex flex-col justify-between text-white">
+<span class="font-serif italic text-lg opacity-90">The Ritual</span>
+<div>
+<p class="text-xs font-label-sm uppercase tracking-[0.2em] mb-1">Reserve Selection</p>
+<p class="font-display-lg text-2xl">The Roast Master</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="snap-center shrink-0 w-[85%] aspect-[1.58/1] rounded-2xl overflow-hidden shadow-xl relative">
+<img class="w-full h-full object-cover brightness-75" data-alt="a minimalist pour-over coffee set with a glass carafe and ceramic dripper in a bright white sunlit kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-Jii_It5je4pdV09h3YSJbj09QKY3lwUeIlAKZhQfE6c9sNJmZ9r1ZQRVK8QfikURrDBWxoNDHsOd264x7ME-6Vgq6yA6eg5Z-VpsVpvVE1zh4MUV1DQ41bbLZ-KoLHoDXrbptUqQXTQjh8F8LkNmtkTZ9BK5rsRrj-38fS4TWX7G4uWRwAZTrlhBXn3NEXiJ8jp3f-1QmDcRi7WNUQmhjEW6asZYL6VDKmSeEvmp-MbgY5kuPF9S39lZ-5hny6RWLPTT_m40rxw"/>
+<div class="absolute inset-0 p-lg flex flex-col justify-between text-white">
+<span class="font-serif italic text-lg opacity-90">The Ritual</span>
+<div>
+<p class="text-xs font-label-sm uppercase tracking-[0.2em] mb-1">Daily Brew</p>
+<p class="font-display-lg text-2xl">Simplicity Found</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Subscription Section: Asymmetric Bento Style -->
+<section class="grid grid-cols-2 gap-md mb-xl">
+<div class="col-span-2 glass-card rounded-2xl p-lg flex flex-col justify-center border-surface-variant/30">
+<div class="flex items-center gap-sm mb-sm text-primary">
+<span class="material-symbols-outlined" data-weight="fill">auto_stories</span>
+<span class="font-label-sm uppercase tracking-widest">Coffee Subscription</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">A Monthly Journey</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Gift a recurring delivery of our finest small-batch roasts, curated monthly for the true connoisseur.
+                </p>
+</div>
+<div class="bg-surface-container rounded-2xl p-md flex flex-col justify-between shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">card_giftcard</span>
+<p class="font-label-md text-primary mt-md">One-time<br/>Gratitude</p>
+</div>
+<div class="bg-secondary-container rounded-2xl p-md flex flex-col justify-between shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">timer</span>
+<p class="font-label-md text-primary mt-md">3, 6, or 12<br/>Month Rituals</p>
+</div>
+</section>
+<!-- CTA Buttons -->
+<section class="space-y-md">
+<button class="w-full h-14 bg-primary-container text-on-primary font-label-md rounded-xl flex items-center justify-center gap-sm shadow-lg shadow-primary-container/20 active:scale-95 transition-transform duration-150">
+                Send Gift Card
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-transparent border-2 border-primary-container/20 text-primary-container font-label-md rounded-xl flex items-center justify-center gap-sm active:scale-95 transition-transform duration-150">
+                Gift a Subscription
+                <span class="material-symbols-outlined text-[20px]">redeem</span>
+</button>
+</section>
+<section class="mt-xl py-lg border-t border-stone-200 text-center">
+<p class="font-serif italic text-on-surface-variant/60">"The greatest gift is the time spent over a perfect cup."</p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-4 bg-stone-50 border-t border-stone-200 shadow-[0_-4px_12px_rgba(62,39,35,0.08)]">
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#3E2723] transition-all" href="#">
+<span class="material-symbols-outlined">local_cafe</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#3E2723] transition-all" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Masterclass</span>
+</a>
+<!-- Active Tab: Gifting -->
+<a class="flex flex-col items-center justify-center text-[#3E2723] scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Gifting</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#3E2723] transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Account</span>
+</a>
+</nav>
+</body></html>

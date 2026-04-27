@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#273103",
+                    "tertiary": "#141b00",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#bfcd8f",
+                    "surface-container": "#ffebd3",
+                    "error": "#ba1a1a",
+                    "background": "#fff8f4",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#402d10",
+                    "on-tertiary-container": "#8d9a61",
+                    "on-surface-variant": "#504442",
+                    "surface-tint": "#745853",
+                    "primary-fixed": "#ffdad4",
+                    "primary-container": "#3e2723",
+                    "inverse-on-surface": "#ffeedb",
+                    "on-surface": "#281801",
+                    "surface-dim": "#f5d5ab",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "primary": "#271310",
+                    "surface-container-high": "#ffe4c2",
+                    "on-primary-container": "#ae8d87",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#e3beb8",
+                    "secondary-container": "#e1e1c9",
+                    "on-secondary-container": "#636451",
+                    "on-tertiary-fixed-variant": "#404b1b",
+                    "on-background": "#281801",
+                    "secondary": "#5e604d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#feddb3",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-primary-fixed": "#2b1613",
+                    "error-container": "#ffdad6",
+                    "surface": "#fff8f4",
+                    "on-secondary-fixed-variant": "#474836",
+                    "outline": "#827472",
+                    "surface-bright": "#fff8f4",
+                    "primary-fixed-dim": "#e3beb8",
+                    "surface-variant": "#feddb3",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-tertiary-fixed": "#171e00",
+                    "tertiary-fixed": "#dbe9a9",
+                    "surface-container-low": "#fff1e4",
+                    "outline-variant": "#d3c3c0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "32px",
+                    "unit": "4px",
+                    "margin-mobile": "20px",
+                    "lg": "24px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "xs": "4px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif", "serif"],
+                    "headline-lg": ["Noto Serif", "serif"],
+                    "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                    "label-md": ["Be Vietnam Pro", "sans-serif"],
+                    "body-md": ["Be Vietnam Pro", "sans-serif"],
+                    "headline-md": ["Noto Serif", "serif"],
+                    "label-sm": ["Be Vietnam Pro", "sans-serif"]
+            },
+            "fontSize": {
+                    "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f4;
+            color: #281801;
+            -webkit-font-smoothing: antialiased;
+        }
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-stone-50/95 dark:bg-stone-950/95 text-stone-900 dark:text-stone-100 shadow-sm dark:shadow-none border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150" data-icon="menu">menu</button>
+</div>
+<h1 class="font-serif text-lg tracking-tight font-bold text-stone-900 dark:text-stone-100">Artisan Brew</h1>
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden">
+<img alt="user profile photo" class="w-full h-full object-cover" data-alt="close-up portrait of a man with a friendly expression in soft natural lighting professional headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7jCQL2ZRgHggJn10buhiqmqG_Bobdt5cnv8D_hdrHaSiQ7e6U8VI07Z30mhXbzj3sLHxpzE_oRK0HE9SGmpFB2RrQmBdKkbLPbaKe7ssJCASq5SslQvkbUCYgsHRLNUtjE5Nghb7rAvlfZGx5r-yT0tuepHxfAqVGLPyT_I9NP7ViPAeTbH1ndQ7WkMwyn-c3BtVvKUuakU50rVk9__lbSYRNW1oowRp6lylyYU0zjXJQUdb5Y_72NbjR8ffC4CZYnBWMcAVnb8g"/>
+</div>
+</header>
+<main class="pt-20 pb-32 px-margin-mobile max-w-2xl mx-auto">
+<!-- Delivery/Pickup Toggle -->
+<div class="flex p-1 bg-surface-container-low rounded-xl mb-lg">
+<button class="flex-1 py-3 px-4 rounded-lg font-label-sm bg-primary text-on-primary shadow-sm">DELIVERY</button>
+<button class="flex-1 py-3 px-4 rounded-lg font-label-sm text-on-surface-variant">PICKUP</button>
+</div>
+<!-- Section Title -->
+<div class="mb-lg">
+<h2 class="font-headline-md text-primary mb-1">Your Selection</h2>
+<p class="font-body-md text-on-surface-variant italic">The ritual begins here.</p>
+</div>
+<!-- Cart Items -->
+<div class="space-y-gutter">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-md flex gap-md shadow-[0_4px_12px_rgba(62,39,35,0.05)] border border-outline-variant/20">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Flat White" class="w-full h-full object-cover" data-alt="close-up of a perfectly poured flat white in a ceramic cup with elegant latte art heart on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9XrGgLoKpuWcu0UYsEeANP0p06npEmQmVpPT4Y5YSbq_s1-wajd6QwkcnPl2WOBFksIeCUoxLvI7HZkPKwFWTo5xvdldDT2wJIxz8LIB_lOm2gr_wHuJL6SmSt7w8hesoPo8L7gqfsHy8SjwOm96ft3XFIRCkzht-7Q30yO_b0vlf9W1gq6PpeTqG5XLQ7vKWbm8y2y5hHsubTyDXhNDLEp9nO6AaTfpLky85eprk8w5NtQOq6s4VyCB9FS0RXSHZsL8WrWcVja4"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-body-lg text-primary">Flat White</h3>
+<button class="material-symbols-outlined text-outline text-sm" data-icon="close">close</button>
+</div>
+<p class="font-label-md text-on-surface-variant text-[12px]">Medium • Oat Milk • No Sugar</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-md text-lg text-primary">$5.50</span>
+<div class="flex items-center gap-3 bg-tan-50 border border-outline-variant rounded-full px-2 py-1">
+<button class="w-6 h-6 flex items-center justify-center rounded-full border border-outline-variant text-primary material-symbols-outlined text-xs" data-icon="remove">remove</button>
+<span class="font-label-md w-4 text-center">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full border border-outline-variant text-primary material-symbols-outlined text-xs" data-icon="add">add</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md flex gap-md shadow-[0_4px_12px_rgba(62,39,35,0.05)] border border-outline-variant/20">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Almond Croissant" class="w-full h-full object-cover" data-alt="flaky golden-brown almond croissant on a rustic plate with dusted powdered sugar and sliced almonds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUqnkB45JPI-Et7LKdumus3wBgStM7u1VHheZ7-qMSyVsLfosE1FJhRcGn8tCcOK-EI-ZRyX8U9miy8h-tVzi0slPmsvDBUDg9Bd3bQOiH3yu_ZxiCt_85ZCs4Q3OJQetdTVDaoHHckFsl-INQVyDSa5guZSwTbOQ_Dsnq5THRpe_u7EhsMDI9_QHyJI3s9dvcaIRtm0ARRu33VTJHsgGIpd2rY43-CpXFoZGYaq_hNCyefy9IysGrJtN4y92569rlfsY2p1cBbzM"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-body-lg text-primary">Almond Croissant</h3>
+<button class="material-symbols-outlined text-outline text-sm" data-icon="close">close</button>
+</div>
+<p class="font-label-md text-on-surface-variant text-[12px]">Warm • Extra Flaky</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-headline-md text-lg text-primary">$4.25</span>
+<div class="flex items-center gap-3 bg-tan-50 border border-outline-variant rounded-full px-2 py-1">
+<button class="w-6 h-6 flex items-center justify-center rounded-full border border-outline-variant text-primary material-symbols-outlined text-xs" data-icon="remove">remove</button>
+<span class="font-label-md w-4 text-center">2</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full border border-outline-variant text-primary material-symbols-outlined text-xs" data-icon="add">add</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Delivery Address -->
+<section class="mt-xl">
+<h3 class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-md">DELIVERY ADDRESS</h3>
+<div class="bg-surface-container-low rounded-xl p-md flex items-center gap-md border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="location_on">location_on</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-primary">Home (Main)</p>
+<p class="font-body-md text-on-surface-variant text-sm">452 Artisan Way, Suite 102, Brooklyn, NY</p>
+</div>
+<button class="material-symbols-outlined text-primary" data-icon="edit">edit</button>
+</div>
+</section>
+<!-- Price Summary -->
+<section class="mt-xl p-lg bg-surface-container-high rounded-2xl">
+<h3 class="font-headline-md text-primary mb-lg">Order Summary</h3>
+<div class="space-y-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md">Subtotal</span>
+<span class="font-body-md">$14.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md">Delivery Fee</span>
+<span class="font-body-md">$2.50</span>
+</div>
+<div class="pt-sm mt-sm border-t border-primary/10 flex justify-between">
+<span class="font-headline-md text-primary">Total</span>
+<span class="font-headline-md text-primary">$16.50</span>
+</div>
+</div>
+</section>
+<!-- Checkout Button -->
+<button class="w-full mt-lg bg-primary text-on-primary h-14 rounded-full font-label-md tracking-wider shadow-lg active:scale-[0.98] transition-transform">
+            PROCEED TO CHECKOUT
+        </button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 shadow-[0_-4px_12px_rgba(62,39,35,0.05)] border-t border-stone-200 dark:border-stone-800">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300 active:translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300 active:translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Search</span>
+</div>
+<!-- ACTIVE TAB: Cart -->
+<div class="flex flex-col items-center justify-center text-stone-900 dark:text-stone-100 font-bold border-t-2 border-stone-900 dark:border-stone-100 pt-2 active:translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Cart</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pt-2 hover:text-stone-600 dark:hover:text-stone-300 active:translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[11px] uppercase tracking-widest">Profile</span>
+</div>
+</nav>
+</body></html>

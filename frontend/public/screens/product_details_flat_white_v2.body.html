@@ -1,0 +1,126 @@
+
+<!-- Top App Bar (Floating Header) -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 bg-stone-50/80 dark:bg-[#1b1412]/80 backdrop-blur-md">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container/50 backdrop-blur-md text-[#3E2723] dark:text-[#D7CCC8] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="text-[#3E2723] dark:text-[#D7CCC8] font-serif italic text-xl">Artisan Brew</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container/50 backdrop-blur-md text-[#3E2723] dark:text-[#D7CCC8] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</header>
+<main class="pb-32">
+<!-- Hero Image (Full-bleed 4:5 Portrait) -->
+<section class="relative h-[486px] w-full">
+<img alt="Flat White Coffee" class="w-full h-full object-cover" data-alt="Close-up of a perfectly poured Flat White with intricate heart latte art in a ceramic cup, warm natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqrT58tC776ot4DEIzx-JcKnGBU4M4GGGvCazztjjF073ueiU7KhWIctDimzt51NWnOI1SEmMb5ZZNRtDQks0054i4TJ0VtJUPqbb4suD5uwKAhlM1Uiqud1GwZfy9tzfI0puoQpGU-v5ruPHbx5Jqy_ZHK8nc-wuuAPlmMLGpgpggZFJTKlLXPXRjR0abqlcVcPtytu77AOuyj5TvekdPrGycIF3XnPP2-kBO1cZmuGx3E_qO2Hwp5cgqdfCp0L-0RhfOVFbB7OU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40"></div>
+</section>
+<!-- Product Info Content -->
+<section class="px-margin-mobile -mt-8 relative z-10 bg-background rounded-t-[32px] pt-8">
+<!-- Category Tag -->
+<span class="inline-block px-3 py-1 bg-surface-container-highest text-primary-container font-label-sm text-[10px] uppercase tracking-widest rounded-full mb-4">
+                Classic
+            </span>
+<!-- Title and Rating -->
+<div class="flex justify-between items-start mb-4">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Flat White</h1>
+<div class="flex items-center gap-1 bg-surface-container p-2 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface">4.8</span>
+<span class="font-label-sm text-outline">(1,204)</span>
+</div>
+</div>
+<!-- Description -->
+<div class="mb-8">
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                    A velvety smooth espresso-based drink, expertly combined with thin, silky microfoam for a rich, creamy texture and a deep coffee profile. 
+                    <button class="text-primary-container font-semibold ml-1 underline decoration-primary-container/30">Read more</button>
+</p>
+</div>
+<!-- Size Selection (Segmented Toggle) -->
+<div class="mb-8">
+<h3 class="font-label-md text-outline uppercase tracking-wider mb-4">Select Size</h3>
+<div class="flex bg-surface-container-low p-1.5 rounded-2xl gap-1">
+<button class="flex-1 py-3 text-center rounded-xl font-label-md text-outline hover:bg-white/50 transition-all">
+                        Small <span class="block text-[10px] font-normal">8oz</span>
+</button>
+<button class="flex-1 py-3 text-center rounded-xl font-label-md bg-primary text-on-primary shadow-lg shadow-primary/20 scale-[1.02] transition-all">
+                        Medium <span class="block text-[10px] opacity-80 font-normal">12oz</span>
+</button>
+<button class="flex-1 py-3 text-center rounded-xl font-label-md text-outline hover:bg-white/50 transition-all">
+                        Large <span class="block text-[10px] font-normal">16oz</span>
+</button>
+</div>
+</div>
+<!-- Customization (Horizontal Scrollable Chips) -->
+<div class="mb-8">
+<h3 class="font-label-md text-outline uppercase tracking-wider mb-4">Customise your brew</h3>
+<div class="flex overflow-x-auto no-scrollbar gap-3 pb-2 -mx-margin-mobile px-margin-mobile">
+<!-- Extra Shot -->
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors group">
+<span class="material-symbols-outlined text-primary-container" data-icon="add_circle">add_circle</span>
+<div class="text-left">
+<div class="font-label-md text-primary">Extra Shot</div>
+<div class="text-[11px] text-outline">+$0.75</div>
+</div>
+</button>
+<!-- Oat Milk -->
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors group">
+<span class="material-symbols-outlined text-primary-container" data-icon="eco">eco</span>
+<div class="text-left">
+<div class="font-label-md text-primary">Oat Milk</div>
+<div class="text-[11px] text-outline">+$0.50</div>
+</div>
+</button>
+<!-- Almond Milk -->
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors group">
+<span class="material-symbols-outlined text-primary-container" data-icon="grass">grass</span>
+<div class="text-left">
+<div class="font-label-md text-primary">Almond Milk</div>
+<div class="text-[11px] text-outline">+$0.50</div>
+</div>
+</button>
+<!-- Vanilla Syrup -->
+<button class="flex-shrink-0 flex items-center gap-2 px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors group">
+<span class="material-symbols-outlined text-primary-container" data-icon="water_drop">water_drop</span>
+<div class="text-left">
+<div class="font-label-md text-primary">Vanilla Syrup</div>
+<div class="text-[11px] text-outline">+$0.50</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Nutritional Info (Bonus Minimalist Section) -->
+<div class="p-6 bg-surface-variant/30 rounded-3xl flex justify-between items-center">
+<div class="text-center">
+<span class="block font-label-md text-primary">120</span>
+<span class="text-[10px] text-outline uppercase tracking-widest">Calories</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div class="text-center">
+<span class="block font-label-md text-primary">15g</span>
+<span class="text-[10px] text-outline uppercase tracking-widest">Caffeine</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div class="text-center">
+<span class="block font-label-md text-primary">8g</span>
+<span class="text-[10px] text-outline uppercase tracking-widest">Sugar</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Footer (Fixed Bottom Bar) -->
+<footer class="sticky bottom-0 left-0 w-full bg-white/90 backdrop-blur-xl px-margin-mobile py-6 z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] border-t border-stone-100">
+<div class="max-w-md mx-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] text-outline uppercase tracking-widest font-semibold mb-0.5">Price</span>
+<span class="font-headline-md text-primary">$4.50</span>
+</div>
+<button class="w-[60%] h-14 bg-primary text-on-primary rounded-full font-label-md text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary-container/20 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-white" data-icon="shopping_bag">shopping_bag</span>
+                Buy Now
+            </button>
+</div>
+</footer>
+<!-- Bottom Navigation (Inactive for PDP focused journey) -->
+<!-- Suppressed to prioritize Product Details content -->

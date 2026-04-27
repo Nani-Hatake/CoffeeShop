@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#404b1b",
+                    "surface-variant": "#feddb3",
+                    "on-tertiary-fixed": "#171e00",
+                    "on-surface": "#281801",
+                    "surface-bright": "#fff8f4",
+                    "tertiary-fixed": "#dbe9a9",
+                    "primary-fixed": "#ffdad4",
+                    "tertiary-container": "#273103",
+                    "surface": "#fff8f4",
+                    "on-surface-variant": "#504442",
+                    "secondary": "#5e604d",
+                    "background": "#fff8f4",
+                    "on-secondary-container": "#636451",
+                    "surface-container": "#ffebd3",
+                    "on-tertiary-container": "#8d9a61",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "surface-container-highest": "#feddb3",
+                    "primary-container": "#3e2723",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#141b00",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#e3beb8",
+                    "on-primary-container": "#ae8d87",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#e1e1c9",
+                    "primary": "#271310",
+                    "inverse-on-surface": "#ffeedb",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#bfcd8f",
+                    "outline-variant": "#d3c3c0",
+                    "surface-tint": "#745853",
+                    "on-background": "#281801",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "inverse-surface": "#402d10",
+                    "on-primary-fixed": "#2b1613",
+                    "inverse-primary": "#e3beb8",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#827472",
+                    "surface-dim": "#f5d5ab",
+                    "surface-container-high": "#ffe4c2",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-secondary-fixed-variant": "#474836",
+                    "surface-container-low": "#fff1e4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "16px",
+                    "xl": "32px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "lg": "24px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-style: italic; }
+        body { background-color: #fff8f4; color: #281801; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md selection:bg-surface-variant">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-5 h-16 bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md shadow-sm shadow-stone-900/5 border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-900 dark:text-stone-100" data-icon="menu">menu</span>
+</div>
+<h1 class="font-serif italic text-xl text-stone-900 dark:text-stone-100">The Ritual</h1>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-stone-200 dark:border-stone-800">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional coffee roaster with a serene expression in a soft-lit artisan studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHlSn-GlZnG09L7gPrBBYdj8-coK2fMimdEzSxddbU_wOc80sGn1y8P_8r_aUrn6VDkT-2DMzbSizx312XvhZMlPXNG42yn2cd10Tzb5_4ZLR63Cyslr8tfpLkiiTTrSuFj56SqccQMQ-1B5110K31bB991MNx1ahMEkZFq-XsPvv2BX9XoWLfMruZYxwfMGvefBmYdrMYBpY-LSLc4HGdWPClzTf0PW07KMq4QLfdOtCcyHkgnR-23yRgpyTyJuWeb6e-No2yAvE"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-5 max-w-screen-xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col space-y-2 mb-8">
+<span class="font-label-sm text-on-primary-container tracking-[0.2em] uppercase">The Art of Brewing</span>
+<h2 class="font-display-lg text-display-lg leading-tight text-primary">Brewing Rituals</h2>
+</div>
+<!-- Featured Class -->
+<div class="relative w-full aspect-[16/10] md:aspect-[21/9] rounded-xl overflow-hidden shadow-2xl mb-12">
+<img class="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700" data-alt="dramatic wide shot of a slow pour-over coffee ritual with steam rising in a dimly lit, high-end kitchen with stone surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbG3MxLyIo7hhqtTOA70W3obvlogUFXXHH7gq8IZFXvkioyPbwAUaievsRu5dAG08x8m-xq_CBYd2b3W7shWFPyAD1_fNNKM3zuJ7qANKYSP0xpE_ifIsV6KAV07s0n2QnotKin4htcagYKAOwZVf3zQC2SE_jxt-lGq43D4kgr19y7Tpr9RJr2_XRVmHNHuzveO-srpSYK1Bs-Iw_VjhoGAAEOTGvvvochYW-SK1L0gUCo0GN80zHGHzsHZEr9KQ1kZvY4DlHK28"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="bg-surface-variant text-primary-container px-3 py-1 rounded-full text-xs font-semibold w-max mb-3">NOW TRENDING</span>
+<h3 class="font-headline-lg text-white mb-2">Mastering the Bloom</h3>
+<p class="text-stone-200 max-w-md font-body-md mb-4">Learn the essential science behind the initial extraction phase of artisanal coffee.</p>
+<div class="flex items-center gap-4 text-white">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 15 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="signal_cellular_alt">signal_cellular_alt</span> Advanced</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Methods Bento-ish Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- V60 -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="close-up of a glass V60 dripper with coffee spiraling through filter paper, warm golden morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_SpxuyVNv4biS1Pc4n53rb4RzcxeDCRsaHCFfjhYIgbtJpmVpDvbskwLFoCWyO9AMm1mvRvJJEBHX7yRqWAdvGMBKoevJetezc9aDp19ynCMDAkOEx4pP-trIJW-FgKpGbIQYRO6BuuvEcv5hNpO9kXf44-E-8MWvXJ0vpGT34_SqEQ5c5fhgxCqnbodISeorZPcx5e8uEPumfkbpO2oCfeMdHd4vhFXHSFx6EJTe21Olq8RzRQjNAkWnbdZ_0MshDwbUiro13-4"/>
+</div>
+<div class="p-5">
+<h4 class="font-headline-md text-primary mb-1">V60</h4>
+<p class="font-label-md text-on-surface-variant mb-4">Crisp, clean profile with bright acidity.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline">DIFFICULTY</span>
+<span class="text-primary-container font-medium">Expert</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-outline">TIME</span>
+<span class="text-primary-container font-medium">4:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chemex -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="minimalist aesthetic shot of a glass Chemex with wood collar on a tan stone surface, soft directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXCRvK3D97_joj6SRY-A_ZBlQchKMrb2ghOAPoansDwlQkm8OPx8jlwv5bDjF0pDToE5rZ4OVzCz5dc7LcYpHWLLE4TEp8OW1cROCu6q2u1wLawWVxN1ComKkINIY_FikChWOsYTBYUK_dE8DoUG6SzK_4n1dpy707XP-WnmqAVYd1HywpMw_Jr2C68H88jKiFuitkwF56HMrW7xrKpnXOtdg7PZxYmK5vdTL1rUcUBPITvVK8LFG4J5Gnw5MXJ5BAiHox1KMAttM"/>
+</div>
+<div class="p-5">
+<h4 class="font-headline-md text-primary mb-1">Chemex</h4>
+<p class="font-label-md text-on-surface-variant mb-4">Elegant clarity and tea-like body.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline">DIFFICULTY</span>
+<span class="text-primary-container font-medium">Medium</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-outline">TIME</span>
+<span class="text-primary-container font-medium">6:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Aeropress -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="modern industrial Aeropress coffee maker on a rustic dark wood table, moody and cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS4S79vMSt_CB7aljw-182MBcxY6wXsYA9wVMLkcIhhU_CvE4ONFfI0gOJYhvqsIqB937YXx5Ro4zgw0HFVb0li75WJw1jBS3F3qhoBnibJPAe2Yi55xWgvTxzxFEzmyLzrCWzLcet7gHqL2Z-Ss7N2rjLt7u1XP13HmX4KIBa-KlVkqMkgiaFfvDHDgiu6Gdvg6U-jAo2GlCBWjYO9L4FT6vmSAKtawpabsfPaOi1l8wiZ2M09wRF6g7afDpx_wdC3h_3yOaF50Q"/>
+</div>
+<div class="p-5">
+<h4 class="font-headline-md text-primary mb-1">Aeropress</h4>
+<p class="font-label-md text-on-surface-variant mb-4">Versatile, bold, and travel-ready.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline">DIFFICULTY</span>
+<span class="text-primary-container font-medium">Easy</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-outline">TIME</span>
+<span class="text-primary-container font-medium">2:30</span>
+</div>
+</div>
+</div>
+</div>
+<!-- French Press -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="classic stainless steel french press with rich dark coffee crema visible, luxurious and tactile feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCwyMaCP3es2HwaJ6NUikpnIXluSYTmboMVrcF8lNRulumUhyp88NR-KgU_fRIq4RDHdRjJ6o326-3GARqqDbdVSnJfZb9FaaILmL0zUM1407t5ncaFDT9Eut1jl5Hi_0sP41-oNSNAd7DodMHiybuBU5x9C_E3fFsQPzsY0yXbKD86GQGM6BxHLMsdlsnrcb1irdbPawuQliLCd84q3vlOoq3TF2ucekAJsz7ftl5reN2TaMmjv1O9cRC67jqONGiTuIRZiL8dyU"/>
+</div>
+<div class="p-5">
+<h4 class="font-headline-md text-primary mb-1">French Press</h4>
+<p class="font-label-md text-on-surface-variant mb-4">Full-bodied, heavy, and immersive.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline">DIFFICULTY</span>
+<span class="text-primary-container font-medium">Beginner</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-outline">TIME</span>
+<span class="text-primary-container font-medium">5:00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Gifting CTA -->
+<section class="mt-20 p-10 bg-primary-container rounded-2xl text-center">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-4" data-icon="card_giftcard">card_giftcard</span>
+<h2 class="font-serif text-3xl text-white mb-4">Give the Gift of Knowledge</h2>
+<p class="text-on-primary-container font-body-md max-w-lg mx-auto mb-8">Unlock all masterclasses for a loved one. The perfect ritual starts with the perfect technique.</p>
+<button class="bg-surface-variant text-primary px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all uppercase tracking-widest text-sm">Send a Gift Card</button>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-4 bg-stone-50 dark:bg-stone-950 shadow-[0_-4px_12px_rgba(62,39,35,0.08)] border-t border-stone-200 dark:border-stone-800">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600">
+<span class="material-symbols-outlined text-2xl" data-icon="local_cafe">local_cafe</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#3E2723] dark:text-stone-100 scale-110 transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="menu_book" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Masterclass</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600">
+<span class="material-symbols-outlined text-2xl" data-icon="card_giftcard">card_giftcard</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Gifting</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-600">
+<span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-medium mt-1">Account</span>
+</div>
+</nav>
+</body></html>

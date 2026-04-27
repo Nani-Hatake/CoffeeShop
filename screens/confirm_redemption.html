@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .notoSerif { font-family: 'Noto Serif', serif; }
+        .beVietnamPro { font-family: 'Be Vietnam Pro', sans-serif; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e4e4cc",
+                        "background": "#fff8f4",
+                        "secondary-container": "#e1e1c9",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#bfcd8f",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "on-error-container": "#93000a",
+                        "outline": "#827472",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "primary-fixed-dim": "#e3beb8",
+                        "surface-tint": "#745853",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#141b00",
+                        "surface-container-high": "#ffe4c2",
+                        "surface-container-low": "#fff1e4",
+                        "secondary": "#5e604d",
+                        "on-tertiary-fixed-variant": "#404b1b",
+                        "on-secondary-fixed-variant": "#474836",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#ffeedb",
+                        "on-background": "#281801",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#ffebd3",
+                        "on-surface": "#281801",
+                        "outline-variant": "#d3c3c0",
+                        "on-tertiary-fixed": "#171e00",
+                        "tertiary-container": "#273103",
+                        "surface-dim": "#f5d5ab",
+                        "surface": "#fff8f4",
+                        "primary-fixed": "#ffdad4",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#dbe9a9",
+                        "surface-bright": "#fff8f4",
+                        "primary": "#271310",
+                        "surface-variant": "#feddb3",
+                        "on-secondary-container": "#636451",
+                        "inverse-primary": "#e3beb8",
+                        "surface-container-highest": "#feddb3",
+                        "on-surface-variant": "#504442",
+                        "on-primary-container": "#ae8d87",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#8d9a61",
+                        "primary-container": "#3e2723",
+                        "inverse-surface": "#402d10",
+                        "on-primary-fixed": "#2b1613"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "32px",
+                        "sm": "8px",
+                        "gutter": "16px",
+                        "xs": "4px",
+                        "unit": "4px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["beVietnamPro"],
+                        "body-lg": ["beVietnamPro"],
+                        "label-md": ["beVietnamPro"],
+                        "display-lg": ["notoSerif"],
+                        "body-md": ["beVietnamPro"],
+                        "headline-md": ["notoSerif"],
+                        "headline-lg": ["notoSerif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen pb-20">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- TopAppBar -->
+<header class="bg-[#FDFCF8] dark:bg-stone-900 text-[#3E2723] dark:text-[#EFEBE9] docked full-width top-0 border-b border-[#D7CCC8]/30 dark:border-stone-800 flat no shadows flex items-center justify-between px-5 h-16 w-full sticky z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer transition-colors duration-300 ease-in-out hover:bg-[#F5F5F0] dark:hover:bg-stone-800 p-2 rounded-full" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-serif text-lg tracking-tight font-bold">Redeem Rewards</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined cursor-pointer transition-colors duration-300 ease-in-out hover:bg-[#F5F5F0] dark:hover:bg-stone-800 p-2 rounded-full" data-icon="more_vert">more_vert</span>
+</div>
+</header>
+<main class="px-margin-mobile pt-lg pb-xl max-w-md mx-auto">
+<!-- Hero Reward Card -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(62,39,35,0.05)] transition-colors duration-300">
+<div class="relative aspect-square w-full">
+<img alt="Any Signature Latte" class="w-full h-full object-cover" data-alt="Close-up of a beautifully poured latte with intricate heart-shaped foam art in a ceramic mug on a rustic wooden table with soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuzONPnFZ3dxIzYKU53EMVnCyf9NFZ6v1kiwgL9thnQPf_3zi2r6l2FAQXJ17Qtcqk6tC7FceBPdI40NFy5GMfJZAprkTyNySkjVchuxau4hvskeJDpq4htzP7xwlSIvvaFC7Ce93DGPVWQ5dsHVvOm5m7r30Smtn0SDsMJj-I39LunQWGwkxeDf39msM3TBW4U4oFI6ZuQuyfKlEMZfQf6AcmFXX60PgVwhYUGICnqGLL21pZvPHVUEQ3bSX53mbUeUEqoHX79Ok"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-md text-label-md">
+                    50 PTS
+                </div>
+</div>
+<div class="p-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-xs">Any Signature Latte</h2>
+<p class="font-body-md text-on-surface-variant mb-md">Hand-crafted by our master baristas with your choice of premium beans and signature syrups.</p>
+<!-- Point Balance Section -->
+<div class="bg-surface-container-high/50 p-md rounded-lg border border-outline-variant/30 flex justify-between items-center">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Balance</span>
+<span class="font-headline-md text-headline-md text-primary">85 pts</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Remaining</span>
+<span class="font-headline-md text-headline-md text-secondary">35 pts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Redemption Confirmation Text -->
+<div class="mt-lg text-center">
+<p class="font-body-md text-on-surface mb-lg">Would you like to redeem 50 points for this reward? This action will generate a unique reward code valid for 15 minutes.</p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-md">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md py-4 rounded-full shadow-lg transition-transform duration-200 active:scale-[0.98] w-full flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+                Confirm Redemption
+            </button>
+<button class="bg-transparent border border-outline-variant text-primary font-label-md text-label-md py-4 rounded-full transition-colors duration-200 hover:bg-surface-container-low w-full">
+                Cancel
+            </button>
+</div>
+<!-- Fine Print -->
+<div class="mt-xl text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">Terms and conditions apply. Reward codes are valid at participating locations only.</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-6 pb-4 bg-[#FDFCF8] dark:bg-stone-900 text-[#3E2723] dark:text-[#EFEBE9] rounded-t-xl border-t border-[#D7CCC8]/50 dark:border-stone-800 shadow-[0_-4px_20px_rgba(62,39,35,0.05)]">
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-stone-500 scale-95 transition-transform duration-200 hover:text-[#3E2723] dark:hover:text-[#EFEBE9]">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-stone-500 scale-95 transition-transform duration-200 hover:text-[#3E2723] dark:hover:text-[#EFEBE9]">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Menu</span>
+</div>
+<!-- ACTIVE TAB: Rewards -->
+<div class="flex flex-col items-center justify-center text-[#3E2723] dark:text-[#EFEBE9] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#3E2723] after:rounded-full scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="card_membership" style="font-variation-settings: 'FILL' 1;">card_membership</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Rewards</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#A1887F] dark:text-stone-500 scale-95 transition-transform duration-200 hover:text-[#3E2723] dark:hover:text-[#EFEBE9]">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#bfcd8f",
+                    "surface-container": "#ffebd3",
+                    "on-secondary-fixed-variant": "#474836",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#ffeedb",
+                    "surface-dim": "#f5d5ab",
+                    "inverse-surface": "#402d10",
+                    "on-tertiary-container": "#8d9a61",
+                    "tertiary-container": "#273103",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#dbe9a9",
+                    "surface-container-high": "#ffe4c2",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#e3beb8",
+                    "inverse-primary": "#e3beb8",
+                    "surface-variant": "#feddb3",
+                    "secondary-fixed": "#e4e4cc",
+                    "outline-variant": "#d3c3c0",
+                    "primary-fixed": "#ffdad4",
+                    "primary-container": "#3e2723",
+                    "surface": "#fff8f4",
+                    "on-error-container": "#93000a",
+                    "on-background": "#281801",
+                    "surface-container-highest": "#feddb3",
+                    "surface-container-low": "#fff1e4",
+                    "on-tertiary-fixed-variant": "#404b1b",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#2b1613",
+                    "secondary-container": "#e1e1c9",
+                    "secondary": "#5e604d",
+                    "on-surface-variant": "#504442",
+                    "error": "#ba1a1a",
+                    "tertiary": "#141b00",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "on-tertiary-fixed": "#171e00",
+                    "primary": "#271310",
+                    "background": "#fff8f4",
+                    "on-primary-container": "#ae8d87",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#636451",
+                    "surface-tint": "#745853",
+                    "surface-bright": "#fff8f4",
+                    "on-surface": "#281801",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "outline": "#827472"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "16px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Noto Serif"],
+                    "body-lg": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-surface-variant">
+<!-- Hub Nav (injected) -->
+<a href="../index.html" id="__hub_link"
+   style="position:fixed;left:12px;top:12px;z-index:9999;background:rgba(39,19,16,0.92);color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.18);backdrop-filter:blur(6px)">
+   &larr; All Screens
+</a>
+
+<!-- Top App Bar -->
+<header class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 border-b border-stone-200 dark:border-stone-800 shadow-sm dark:shadow-none flex justify-between items-center px-5 h-16 w-full sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors active:scale-95 duration-200 p-2 rounded-full">arrow_back</button>
+<h1 class="font-serif italic tracking-wide text-xl font-serif font-semibold text-stone-900 dark:text-stone-50">Artisan Brew</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-stone-200">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a person with a serene expression, soft studio lighting, muted neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW00migCNuGqcTaBdjJLfl9KuP-nTW0NGmNlQMiTVOrhj5HgMEfgeMgpeCRvFOu7b0Ny4v2JRE5BpG-OMGr6tjzW6S3hM4Vwx5PWjeW_Cu0jtvNbsz2TFkNo9xpjyTA59YpLTBNXM-xbGeNE40tMcODtPLPq-e1FyR1QGvcvaa07mLePEnsdolA4ceTGsbb0oRJrInOkIfU30N17Evl3OpuE0xV5vATWObhFyzFT507m6y-nX1bX8Zw8PoN7RwE0a8npotroj0K7E"/>
+</div>
+</header>
+<main class="max-w-screen-md mx-auto px-margin-mobile py-lg pb-32">
+<!-- Page Headline -->
+<div class="mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Activity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Stay updated with your daily coffee rituals.</p>
+</div>
+<!-- Featured Alert (Bento Style) -->
+<section class="mb-xl">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col md:flex-row">
+<div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up of steaming specialty coffee being poured into a ceramic cup, warm morning light, cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIiYBa_tk2_EvJlRZjhmS_n9UgXGjrXrtzBKjX6-XQhFm-CFfFbPsbxunUBFvBoLtAtEn7t_1sgNhMRhM3C4G9rUn_-p4lS-ErLrL_KTf_OyfDkv5_ueK9O--ZDc-Fe0oMyrNGQiLZXDhkQ5thCPPMgWnFCHdUYdWnztO01bTiHGEPsfS1KnZ93eRVF8HTx22et2gK4qq8GQg51huTUbxUdHsnB7WIpcwZWc6j2atORrmacm0epyBWRbAvacxgOg-cJ7okaQpYjrg"/>
+</div>
+<div class="p-md flex-1 flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-xs">Order Update</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-sm">Your Flat White is being prepared</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Barista Elena is crafting your drink with house-roasted beans. Estimated ready in 4 minutes.</p>
+<div class="flex gap-sm">
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md active:scale-95 transition-transform">Track Order</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<div class="space-y-lg">
+<h4 class="font-label-md text-label-md text-outline uppercase tracking-[0.2em] border-b border-surface-variant pb-xs">Earlier Today</h4>
+<!-- Notification Item 1 -->
+<div class="flex gap-md group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">autorenew</span>
+</div>
+<div class="flex-1 pb-lg border-b border-surface-container-low">
+<div class="flex justify-between items-start mb-xs">
+<h5 class="font-headline-md text-[18px] text-primary">Ethiopian Yirgacheffe is back!</h5>
+<span class="font-label-sm text-label-sm text-outline">10:42 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md leading-relaxed">Our most sought-after seasonal roast has returned. Notes of jasmine, lemon, and peach. Limited quantities available for subscription members.</p>
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-stone-100">
+<img class="w-full h-full object-cover" data-alt="minimalist overhead shot of coffee beans spilling from a burlap sack onto a clean wooden surface, natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2og7QeY0oITCUDWV1v12z9AHWiUOT4ZBAY1DvhuOh-UCNrdOOgttVT7aHtCpF4hhvVTKlN04-N7HVRZHZyXSv10HNVzl5h0UhdzLeizZyIH4pjFL81-jhhF-M3QyamFK6n5n-W9Hc9jxZyD8E8V1svkC45RgFIGYjL1JGh0P2m-84E9yoktkZFdurXumxbKvzkIX8cifLGwFFrpLI8TMLgAi8VzYDxsjG3UVHdAQTF7IhD1va1vsr1wyvs_6zcNPZTFBg4i3_Sao"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+</div>
+</div>
+<!-- Notification Item 2 -->
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+</div>
+<div class="flex-1 pb-lg border-b border-surface-container-low">
+<div class="flex justify-between items-start mb-xs">
+<h5 class="font-headline-md text-[18px] text-primary">Milestone Achieved</h5>
+<span class="font-label-sm text-label-sm text-outline">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">You've earned 50 Brew Points! You're only 10 points away from a complimentary tasting flight.</p>
+</div>
+</div>
+<h4 class="font-label-md text-label-md text-outline uppercase tracking-[0.2em] border-b border-surface-variant pb-xs pt-md">This Week</h4>
+<!-- Notification Item 3 (List Style) -->
+<div class="flex items-center gap-md py-md hover:bg-surface-container-low transition-colors px-sm rounded-lg -mx-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div class="flex-1">
+<h5 class="font-body-lg font-semibold text-primary">New Roastery Nearby</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">The Chelsea Atelier is now open for curated coffee workshops.</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<!-- Notification Item 4 -->
+<div class="flex items-center gap-md py-md hover:bg-surface-container-low transition-colors px-sm rounded-lg -mx-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div class="flex-1">
+<h5 class="font-body-lg font-semibold text-primary">Security Update</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Your login from a new device was successful.</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 pb-safe bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md shadow-[0_-1px_3px_0_rgba(62,39,35,0.05)] border-t border-stone-200 dark:border-stone-800">
+<button class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 transition-all cubic-bezier(0.4, 0, 0.2, 1)">
+<span class="material-symbols-outlined mb-1">coffee</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 transition-all cubic-bezier(0.4, 0, 0.2, 1)">
+<span class="material-symbols-outlined mb-1">autorenew</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Subscriptions</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-4 py-1 hover:text-stone-800 dark:hover:text-stone-200 transition-all cubic-bezier(0.4, 0, 0.2, 1)">
+<span class="material-symbols-outlined mb-1">map</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Locator</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-stone-900 rounded-full px-4 py-1 transition-all cubic-bezier(0.4, 0, 0.2, 1)">
+<span class="material-symbols-outlined mb-1">card_giftcard</span>
+<span class="font-sans text-[11px] uppercase tracking-widest font-medium">Rewards</span>
+</button>
+</nav>
+</body></html>

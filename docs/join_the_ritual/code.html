@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join the Ritual - Artisan Brew</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,500&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#fff8f4",
+                "on-tertiary-fixed": "#171e00",
+                "on-primary-fixed-variant": "#5b403c",
+                "tertiary": "#141b00",
+                "primary-fixed-dim": "#e3beb8",
+                "on-tertiary-fixed-variant": "#404b1b",
+                "on-primary-container": "#ae8d87",
+                "outline": "#827472",
+                "secondary-fixed": "#e4e4cc",
+                "on-tertiary-fixed-variant": "#404b1b",
+                "on-primary-container": "#ae8d87",
+                "primary-fixed": "#ffdad4",
+                "secondary": "#5e604d",
+                "secondary-fixed-dim": "#c8c8b0",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#feddb3",
+                "on-tertiary": "#ffffff",
+                "surface-container": "#ffebd3",
+                "on-primary-fixed": "#2b1613",
+                "inverse-on-surface": "#ffeedb",
+                "background": "#fff8f4",
+                "tertiary-fixed": "#dbe9a9",
+                "secondary-container": "#e1e1c9",
+                "inverse-surface": "#402d10",
+                "surface-bright": "#fff8f4",
+                "on-surface-variant": "#504442",
+                "error": "#ba1a1a",
+                "on-secondary-container": "#636451",
+                "surface-variant": "#feddb3",
+                "on-error": "#ffffff",
+                "tertiary-container": "#273103",
+                "primary-container": "#3e2723",
+                "surface-container-low": "#fff1e4",
+                "outline-variant": "#d3c3c0",
+                "surface-container-high": "#ffe4c2",
+                "on-surface": "#281801",
+                "on-primary": "#ffffff",
+                "error-container": "#ffdad6",
+                "surface-tint": "#745853",
+                "surface-dim": "#f5d5ab",
+                "primary": "#271310",
+                "on-secondary-fixed-variant": "#474836",
+                "inverse-primary": "#e3beb8",
+                "on-secondary-fixed": "#1b1d0e",
+                "on-error-container": "#93000a",
+                "tertiary-fixed-dim": "#bfcd8f",
+                "on-background": "#281801"
+            },
+            "fontFamily": {
+                "body-lg": ["Be Vietnam Pro"],
+                "headline-md": ["Noto Serif"],
+                "label-sm": ["Be Vietnam Pro"],
+                "label-md": ["Be Vietnam Pro"],
+                "headline-lg": ["Noto Serif"],
+                "display-lg": ["Noto Serif"],
+                "body-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "display-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-focus:focus {
+            outline: none;
+            border-color: #3e2723;
+            box-shadow: 0 0 0 1px #3e2723;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Suppressing Shared Components (TopAppBar/BottomNavBar) for Transactional Flow -->
+<main class="flex-grow flex flex-col lg:flex-row min-h-screen">
+<!-- Visual Anchor (Asymmetric Hero Section) -->
+<section class="lg:w-1/2 relative min-h-[320px] lg:min-h-screen overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply z-10"></div>
+<img alt="Artisan coffee" class="absolute inset-0 w-full h-full object-cover" data-alt="Close-up of steam rising from a ceramic cup of dark coffee on a textured stone surface with warm morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUVrDr7qftm3oFMoSnKtt52BzD6bV2xJNWJVkuDjIiD24g2xTCHfC30fAPMDyCzfxVwAg6aCec52M_fjQH-YlhWvdr-05vJMQLJRddNXSOZab7T4wEq24HjR4b5Aeh2fI-Y1eGhgODXTvjIMl6lH4Llejbzj-vXvvGsnVz-qBQqWDgBR-jvrUVbWhTutsEAlAt9mxzXD-IKEMKEeSSA3hNJx0ZsfJIh2tGCbM228zqpsBn_zqpFrv75VbCkpyUH5PvnRlIMmJNvdY"/>
+<div class="absolute bottom-12 left-10 lg:bottom-20 lg:left-20 z-20 max-w-sm">
+<p class="font-headline-md text-surface tracking-wide mb-2">The Coffee Ritual</p>
+<h1 class="font-display-lg text-surface leading-tight">Elevate your daily experience.</h1>
+</div>
+</section>
+<!-- Form Section -->
+<section class="lg:w-1/2 flex items-center justify-center px-margin-mobile py-xl lg:py-0 bg-surface">
+<div class="w-full max-w-[440px]">
+<div class="mb-xl">
+<h2 class="font-headline-lg text-primary mb-2">Join the Ritual</h2>
+<p class="font-body-md text-on-surface-variant">Create an account to begin your journey through curated artisanal blends.</p>
+</div>
+<form class="space-y-lg">
+<!-- Full Name -->
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface ml-1" for="name">Full Name</label>
+<input class="w-full h-14 px-md bg-surface-container-low border border-outline-variant rounded-lg font-body-md text-on-surface placeholder:text-outline/50 form-input-focus transition-all" id="name" placeholder="Arthur Brew" type="text"/>
+</div>
+<!-- Email -->
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface ml-1" for="email">Email Address</label>
+<input class="w-full h-14 px-md bg-surface-container-low border border-outline-variant rounded-lg font-body-md text-on-surface placeholder:text-outline/50 form-input-focus transition-all" id="email" placeholder="name@ritual.com" type="email"/>
+</div>
+<!-- Password -->
+<div class="space-y-xs relative">
+<label class="font-label-md text-on-surface ml-1" for="password">Secure Password</label>
+<div class="relative">
+<input class="w-full h-14 px-md bg-surface-container-low border border-outline-variant rounded-lg font-body-md text-on-surface placeholder:text-outline/50 form-input-focus transition-all" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-md top-1/2 -translate-y-1/2 text-outline" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Terms Checkbox -->
+<div class="flex items-start space-x-md py-xs">
+<div class="flex items-center h-6">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary-container bg-surface-container-low" id="terms" type="checkbox"/>
+</div>
+<label class="font-body-md text-on-surface-variant text-[14px] leading-tight" for="terms">
+                            I agree to the <a class="text-primary font-semibold underline underline-offset-4 decoration-outline-variant" href="#">Terms of Service</a> and <a class="text-primary font-semibold underline underline-offset-4 decoration-outline-variant" href="#">Privacy Policy</a>.
+                        </label>
+</div>
+<!-- CTA Button -->
+<button class="w-full h-[56px] bg-primary text-on-primary rounded-full font-label-md text-[16px] uppercase tracking-widest shadow-lg hover:bg-primary-container transition-all active:scale-[0.98] mt-md" type="submit">
+                        Create Account
+                    </button>
+</form>
+<!-- Footer Links -->
+<div class="mt-xl text-center">
+<p class="font-body-md text-on-surface-variant">
+                        Already part of the ritual? 
+                        <a class="text-primary font-bold ml-1 hover:underline" href="#">Sign In</a>
+</p>
+</div>
+<!-- Brand Minimalist Footer -->
+<div class="mt-32 flex justify-center space-x-lg opacity-30">
+<div class="flex items-center space-x-xs">
+<span class="material-symbols-outlined text-[18px]" data-icon="local_cafe">local_cafe</span>
+<span class="font-label-sm uppercase">Ethically Sourced</span>
+</div>
+<div class="flex items-center space-x-xs">
+<span class="material-symbols-outlined text-[18px]" data-icon="verified">verified</span>
+<span class="font-label-sm uppercase">Small Batch</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>

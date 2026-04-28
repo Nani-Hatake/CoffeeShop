@@ -1,4 +1,5 @@
 const TOKEN_KEY = "artisan_brew_token";
+const BASE_URL = import.meta.env.VITE_API_URL || "";
 
 export function getToken() {
   return localStorage.getItem(TOKEN_KEY);
@@ -10,27 +11,34 @@ export function setToken(token) {
 
 async function request(path, { method = "GET", body, auth = false } = {}) {
   const headers = { "Content-Type": "application/json" };
+
   if (auth) {
     const token = getToken();
     if (token) headers["Authorization"] = `Bearer ${token}`;
   }
-  const res = await fetch(`/api${path}`, {
+
+  const res = await fetch(`${BASE_URL}/api${path}`, {
     method,
     headers,
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
+
   if (res.status === 204) return null;
+
   let data = null;
-  try { data = await res.json(); } catch { /* may have no body */ }
+  try {
+    data = await res.json();
+  } catch {}
+
   if (!res.ok) {
     const message =
       (data && (data.detail || data.message)) ||
       `${res.status} ${res.statusText}`;
     throw new Error(typeof message === "string" ? message : JSON.stringify(message));
   }
+
   return data;
 }
-
 export const api = {
   // auth
   signup: (payload) => request("/auth/signup", { method: "POST", body: payload }),
